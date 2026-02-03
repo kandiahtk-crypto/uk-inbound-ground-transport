@@ -2,99 +2,62 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Contact Us – Trade Enquiries</title>
+<title>Contact | UK Inbound Ground Transport</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Optional CSS (safe to remove if needed) -->
-<!-- <link rel="stylesheet" href="/uk-inbound-ground-transport/style.css"> -->
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<main style="max-width:700px;margin:60px auto;padding:20px;font-family:Arial, sans-serif;">
+<header class="site-header">
+<div class="header-inner">
+<div class="brand">UK Inbound Ground Transport</div>
+<input type="checkbox" id="nav-toggle">
+<label for="nav-toggle" class="nav-toggle">☰</label>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="trade.html">Trade</a>
+<a href="usa.html">USA</a>
+<a href="europe.html">Europe</a>
+<a href="india.html">India</a>
+<a href="china.html">China</a>
+<a href="contact.html" class="active">Contact</a>
+</nav>
+</div>
+</header>
 
-<h1>Trade Enquiries</h1>
-<p>
-We provide UK inbound ground transport services exclusively for
-<strong>tour operators, DMCs, and wholesalers</strong>.
-</p>
+<section class="section">
+<div class="container">
+<h1>Contact Us</h1>
 
-<p>
-For pricing requests, series tours, or operational discussions,
-please contact our trade team using one of the options below.
-</p>
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<label>Company Name</label>
+<input name="company" required>
 
-<!-- EMAIL -->
-<p style="margin-top:30px;">
-<a
-id="emailLink"
-href="#"
-style="
-display:inline-block;
-padding:14px 22px;
-background:#0b3c5d;
-color:#ffffff;
-text-decoration:none;
-border-radius:4px;
-font-size:16px;
-"
->
-Email Trade Enquiries
-</a>
-</p>
+<label>Market</label>
+<select name="market">
+<option>USA</option>
+<option>Europe</option>
+<option>India</option>
+<option>China</option>
+</select>
 
-<!-- WHATSAPP + PHONE -->
-<p style="margin-top:30px;font-size:16px;">
-<strong>Alternative contact options:</strong><br><br>
+<label>Enquiry Type</label>
+<select name="type">
+<option>Ad-hoc programme</option>
+<option>Series / Fixed departures</option>
+</select>
 
-<a href="https://wa.me/447000000000" target="_blank">
-WhatsApp (Operations)
-</a>
-<br><br>
-<a href="tel:+447000000000">
-+44 7000 000000
-</a>
-</p>
+<label>Message</label>
+<textarea name="message" rows="5"></textarea>
 
-<p style="margin-top:40px;font-size:14px;color:#555;">
-Please include group size, travel dates, routing, and any operational
-requirements where possible. Retail enquiries will not be responded to.
-</p>
+<button class="cta">Send Enquiry</button>
+</form>
+</div>
+</section>
 
-</main>
-
-<!-- EMAIL SCRIPT (spam-resistant, bulletproof) -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-const email =
-"enquiries" + "@" + "yourcompany" + "." + "com";
-
-const subject = encodeURIComponent(
-"UK Inbound Ground Transport Enquiry"
-);
-
-const body = encodeURIComponent(
-"Company Name:\n" +
-"Contact Name:\n" +
-"Email:\n" +
-"Group Size:\n" +
-"Travel Dates:\n" +
-"Routing:\n\n" +
-"Additional Notes:\n"
-);
-
-document
-.getElementById("emailLink")
-.setAttribute(
-"href",
-`mailto:${email}?subject=${subject}&body=${body}`
-);
-});
-</script>
+<footer>
+<p>© UK Inbound Ground Transport</p>
+</footer>
 
 </body>
 </html>
-
-
-
