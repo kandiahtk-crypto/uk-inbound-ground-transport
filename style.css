@@ -292,3 +292,29 @@ color: #999;
 }
 
 
+/* =========================
+FORCE MAIN NAV VISIBILITY
+========================= */
+
+.main-nav {
+display: flex !important;
+align-items: center;
+gap: 24px;
+padding: 16px 24px;
+background-color: #0b3c5d;
+position: relative;
+z-index: 9999;
+}
+
+.main-nav a {
+color: #ffffff !important;
+text-decoration: none;
+font-weight: 500;
+}
+
+.main-nav a:hover {
+text-decoration: underline;
+}
+
+
+
