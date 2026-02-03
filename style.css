@@ -6,7 +6,7 @@ box-sizing: border-box;
 }
 
 body {
-font-family: Arial, sans-serif;
+font-family: Arial, Helvetica, sans-serif;
 line-height: 1.6;
 color: #222;
 }
@@ -19,20 +19,22 @@ padding: 0 20px;
 }
 
 .section {
-padding: 60px 0;
+padding: 70px 0;
 }
 
 .section.alt {
-background: #f4f4f4;
+background: #f3f3f3;
 }
 
-/* ================= HEADER & NAV ================= */
+/* ================= HEADER / NAV ================= */
 .site-header {
 background: #0b3c5d;
 color: #fff;
+position: relative;
+z-index: 1000;
 }
 
-.nav-container {
+.nav-wrap {
 max-width: 1100px;
 margin: 0 auto;
 padding: 16px 20px;
@@ -41,32 +43,33 @@ align-items: center;
 justify-content: space-between;
 }
 
-.logo {
+.brand {
 font-weight: bold;
 font-size: 1rem;
 }
 
-.main-nav {
+/* NAV LINKS */
+.nav {
 display: flex;
-gap: 20px;
+gap: 22px;
 }
 
-.main-nav a {
+.nav a {
 color: #fff;
 text-decoration: none;
 font-weight: 500;
 }
 
-.main-nav a:hover {
+.nav a:hover {
 text-decoration: underline;
 }
 
 /* ================= MOBILE MENU ================= */
-#menu-toggle {
+#nav-toggle {
 display: none;
 }
 
-.menu-icon {
+.nav-toggle {
 display: none;
 font-size: 1.6rem;
 cursor: pointer;
@@ -74,20 +77,20 @@ cursor: pointer;
 
 /* ================= HERO ================= */
 .hero {
-background: linear-gradient(135deg, #0b3c5d, #133e5e);
+background: linear-gradient(135deg, #0b3c5d, #153f5f);
 color: #fff;
-padding: 80px 0;
 text-align: center;
+padding: 90px 0;
 }
 
-.tagline {
-margin-top: 10px;
+.hero-text {
+margin-top: 12px;
 font-size: 1.1rem;
 }
 
 /* ================= CONTENT ================= */
 h1, h2 {
-margin-bottom: 16px;
+margin-bottom: 18px;
 }
 
 .list {
@@ -102,8 +105,8 @@ margin-bottom: 10px;
 /* ================= CTA ================= */
 .cta {
 display: inline-block;
-margin-top: 20px;
-padding: 12px 24px;
+margin-top: 24px;
+padding: 12px 26px;
 background: #0b3c5d;
 color: #fff;
 text-decoration: none;
@@ -111,7 +114,7 @@ border-radius: 4px;
 }
 
 .cta:hover {
-background: #092f48;
+background: #082d45;
 }
 
 /* ================= FOOTER ================= */
@@ -124,30 +127,30 @@ font-size: 0.9rem;
 }
 
 /* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
-.menu-icon {
+.nav-toggle {
 display: block;
 }
 
-.main-nav {
+.nav {
 display: none;
 flex-direction: column;
 background: #0b3c5d;
 position: absolute;
 top: 60px;
-right: 0;
+left: 0;
 width: 100%;
 padding: 20px;
 }
 
-#menu-toggle:checked + .menu-icon + .main-nav {
+#nav-toggle:checked + .nav-toggle + .nav {
 display: flex;
 }
 
-.main-nav a {
+.nav a {
 padding: 10px 0;
 }
-
 }
+
 
