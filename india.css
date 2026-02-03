@@ -1,0 +1,12 @@
+/* India CTA */
+
+.cta-primary,
+button {
+background-color: #2e8b57; /* professional green */
+font-weight: 600;
+}
+
+.cta-primary:hover,
+button:hover {
+background-color: #246b44;
+}
