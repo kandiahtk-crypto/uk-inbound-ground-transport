@@ -84,3 +84,41 @@ border-radius: 6px;
 .about p, .operations li {
 line-height: 1.6;
 }
+/* Mobile optimisation */
+@media (max-width: 768px) {
+
+header {
+padding: 24px 16px;
+text-align: left;
+}
+
+header h1 {
+font-size: 28px;
+line-height: 1.2;
+}
+
+.tagline {
+font-size: 16px;
+margin-top: 8px;
+}
+
+nav {
+margin-top: 16px;
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+}
+
+nav a {
+font-size: 16px;
+padding: 6px 0;
+}
+
+.hero h2 {
+font-size: 24px;
+}
+
+.container {
+padding: 0 16px;
+}
+}
