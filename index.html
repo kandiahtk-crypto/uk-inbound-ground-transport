@@ -1,104 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<title>UK Inbound Ground Transport | Trade Only</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Trade-only UK inbound ground transport for tour operators, DMCs and wholesalers." />
+/* ===== RESET ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-<link rel="stylesheet" href="style.css" />
-</head>
+/* ===== TYPOGRAPHY ===== */
+body {
+font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+Roboto, Helvetica, Arial, sans-serif;
+line-height: 1.65;
+color: #1f2933;
+background: #ffffff;
+}
 
-<body>
+h1, h2, h3 {
+font-weight: 600;
+letter-spacing: -0.02em;
+}
 
-<!-- ================= HEADER / NAV ================= -->
-<header class="site-header">
-<div class="nav-wrap">
+p { color: #4b5563; }
 
-<div class="brand">
-UK Inbound Ground Transport
-</div>
+/* ===== LAYOUT ===== */
+.container {
+max-width: 1120px;
+margin: 0 auto;
+padding: 0 22px;
+}
 
-<input type="checkbox" id="nav-toggle" />
-<label for="nav-toggle" class="nav-toggle">☰</label>
+.section { padding: 80px 0; }
+.section.alt { background: #f7f8fa; }
 
-<nav class="nav">
-<a href="index.html">Home</a>
-<a href="trade.html">Trade</a>
-<a href="usa.html">USA</a>
-<a href="europe.html">Europe</a>
-<a href="india.html">India</a>
-<a href="china.html">China</a>
-<a href="contact.html">Contact</a>
-</nav>
+/* ===== HEADER / NAV ===== */
+.site-header {
+background: #0b3c5d;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
 
-</div>
-</header>
+.nav-wrap {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 22px;
+}
 
-<!-- ================= HERO ================= -->
-<section class="hero">
-<div class="container">
-<h1>UK Inbound Ground Transport</h1>
-<p class="hero-text">
-Trade-only ground transportation for inbound tour operators
-</p>
-</div>
-</section>
+.brand {
+color: #fff;
+font-size: 0.9rem;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+}
 
-<!-- ================= MAIN CONTENT ================= -->
-<main>
+.nav {
+display: flex;
+gap: 26px;
+}
 
-<section class="section">
-<div class="container">
-<h2>Your UK Inbound Ground Transportation Partner</h2>
+.nav a {
+color: #cfd8e3;
+text-decoration: none;
+font-size: 0.9rem;
+}
 
-<p>
-We provide reliable, trade-only coach and ground transport services for
-inbound tour operators, DMCs, and wholesalers operating across the
-United Kingdom.
-</p>
+.nav a.active,
+.nav a:hover {
+color: #ffffff;
+text-decoration: underline;
+}
 
-<p>
-Our focus is operational reliability, clear communication, and
-long-term trade partnerships.
-</p>
+/* ===== MOBILE NAV ===== */
+#nav-toggle { display: none; }
+.nav-toggle {
+display: none;
+color: #fff;
+font-size: 1.6rem;
+cursor: pointer;
+}
 
-<a href="trade.html" class="cta">Work With Us (Trade)</a>
-</div>
-</section>
+/* ===== HERO ===== */
+.hero {
+background: linear-gradient(135deg, #0b3c5d, #123e5e);
+color: #fff;
+text-align: center;
+padding: 100px 0;
+}
 
-<section class="section alt">
-<div class="container">
-<h2>Who We Work With</h2>
-<ul class="list">
-<li>🇺🇸 United States tour operators</li>
-<li>🇪🇺 European DMCs</li>
-<li>🇮🇳 Indian group tour planners</li>
-<li>🇨🇳 Chinese inbound specialists</li>
-</ul>
-</div>
-</section>
+.hero p {
+margin-top: 14px;
+font-size: 1.1rem;
+color: #dbeafe;
+}
 
-<section class="section">
-<div class="container">
-<h2>Why Trade Partners Choose Us</h2>
-<ul class="list">
-<li>London-based operator with nationwide UK coverage</li>
-<li>Clear communication and fast trade response times</li>
-<li>Series tour pricing discipline</li>
-<li>100% B2B focus — no retail work</li>
-</ul>
-</div>
-</section>
+/* ===== CTA ===== */
+.cta {
+display: inline-block;
+margin-top: 28px;
+padding: 14px 32px;
+background: #0b3c5d;
+color: #fff;
+border-radius: 6px;
+text-decoration: none;
+font-weight: 500;
+}
 
-</main>
+/* ===== FORMS ===== */
+form { margin-top: 30px; }
+label {
+display: block;
+margin-top: 16px;
+font-weight: 500;
+}
+input, textarea, select {
+width: 100%;
+margin-top: 6px;
+padding: 12px;
+border: 1px solid #d1d5db;
+border-radius: 6px;
+font-size: 0.95rem;
+}
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-<div class="container">
-<p>© UK Inbound Ground Transport — Trade Only</p>
-</div>
-</footer>
+/* ===== FOOTER ===== */
+footer {
+background: #0f172a;
+color: #cbd5e1;
+text-align: center;
+padding: 22px 0;
+font-size: 0.85rem;
+}
 
-</body>
-</html>
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+.nav-toggle { display: block; }
+.nav {
+display: none;
+flex-direction: column;
+background: #0b3c5d;
+position: absolute;
+top: 64px;
+left: 0;
+width: 100%;
+padding: 20px;
+}
+#nav-toggle:checked + .nav-toggle + .nav { display: flex; }
+}
