@@ -1,100 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Contact Us – Trade Enquiries</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- MAIN SITE CSS -->
-<link hrel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<!-- CONTACT SECTION -->
 <section class="contact-section">
 <div class="contact-container">
 
-<h1>Contact Us</h1>
-<h2>Trade Enquiries – UK Inbound Ground Transport</h2>
+<h1>Trade Enquiries</h1>
+<h2>UK Inbound Ground Transport</h2>
 
 <p class="intro">
-We work exclusively with <strong>inbound tour operators, DMCs, and wholesalers</strong>
-arranging UK group and series programmes.
+We provide UK inbound ground transport services exclusively for
+<strong>tour operators, DMCs, and wholesalers</strong>.
 </p>
 
 <p class="intro">
-If you have confirmed dates or a live enquiry, please use our
-<a href="rfq.html">Trade RFQ form</a> for the fastest response.
+For pricing requests, series tours, or operational discussions,
+please contact our trade team directly.
 </p>
 
-<div class="notice-box">
-<strong>Please note:</strong>
-<ul>
-<li>Trade enquiries only — no retail or direct passenger requests</li>
-<li>Ground transportation services only</li>
-<li>Incomplete or speculative enquiries may not receive a response</li>
-<li>All discussions and pricing are confidential and non-commissionable</li>
-</ul>
+<!-- EMAIL CTA -->
+<button id="emailTradeBtn" class="primary-cta">
+Email Trade Enquiries
+</button>
+
+<p class="small-note">
+Please include group size, travel dates, routing, and any operational
+requirements where possible.
+</p>
+
+<hr class="divider">
+
+<!-- SECONDARY CONTACT OPTIONS -->
+<div class="secondary-contact">
+
+<p><strong>Alternative contact options:</strong></p>
+
+<a
+class="secondary-link"
+href="https://wa.me/447000000000"
+target="_blank"
+rel="noopener"
+>
+WhatsApp (Operations)
+</a>
+
+<span class="separator">|</span>
+
+<a class="secondary-link" href="tel:+447000000000">
++44 7000 000000
+</a>
+
 </div>
-
-<form class="contact-form">
-
-<label>
-Company / Organisation Name *
-<input type="text" required>
-</label>
-
-<label>
-Your Name *
-<input type="text" required>
-</label>
-
-<label>
-Business Email Address *
-<input type="email" required>
-</label>
-
-<label>
-Source Market *
-<select required>
-<option value="">Select market</option>
-<option>USA</option>
-<option>Europe</option>
-<option>India</option>
-<option>China</option>
-<option>Other</option>
-</select>
-</label>
-
-<label>
-Nature of Enquiry *
-<select required>
-<option value="">Select enquiry type</option>
-<option>Trade RFQ (confirmed programme)</option>
-<option>Rate Request / Budget Planning</option>
-<option>Series Tour Discussion</option>
-<option>General Trade Enquiry</option>
-</select>
-</label>
-
-<label>
-Message *
-<textarea rows="6" required
-placeholder="Please outline programme type, estimated group size, travel period, and city-to-city routing."></textarea>
-</label>
-
-<label class="checkbox">
-<input type="checkbox" required>
-I confirm this enquiry is from a tour operator, DMC, or wholesaler planning UK inbound travel.
-</label>
-
-<button type="submit">Submit Trade Enquiry</button>
-
-</form>
 
 </div>
 </section>
 
-</body>
-</html>
+<!-- Spam-resistant email assembly -->
+<script>
+(function () {
+const user = "trade";
+const domain = "yourcompany";
+const tld = "com";
+
+const subject = encodeURIComponent(
+"UK Inbound Ground Transport Enquiry"
+);
+
+const body = encodeURIComponent(
+"Company Name:\n" +
+"Contact Name:\n" +
+"Email:\n" +
+"Group Size:\n" +
+"Travel Dates:\n" +
+"Routing:\n\n" +
+"Additional Notes:\n"
+);
+
+const emailLink =
+`mailto:${user}@${domain}.${tld}?subject=${subject}&body=${body}`;
+
+document
+.getElementById("emailTradeBtn")
+.addEventListener("click", function () {
+window.location.href = emailLink;
+});
+})();
+</script>
