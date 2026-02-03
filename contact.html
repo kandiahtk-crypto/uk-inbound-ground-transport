@@ -1,12 +1,100 @@
-/* CONTACT PAGE VISIBILITY FIX */
-.contact-section {
-display: block !important;
-visibility: visible !important;
-opacity: 1 !important;
-height: auto !important;
-position: static !important;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us – Trade Enquiries</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.contact-container {
-min-height: 300px;
-}
+<!-- Optional CSS (safe to remove if needed) -->
+<link rel="stylesheet" href="/uk-inbound-ground-transport/style.css">
+</head>
+
+<body>
+
+<main style="max-width:700px;margin:60px auto;padding:20px;font-family:Arial, sans-serif;">
+
+<h1>Trade Enquiries</h1>
+<p>
+We provide UK inbound ground transport services exclusively for
+<strong>tour operators, DMCs, and wholesalers</strong>.
+</p>
+
+<p>
+For pricing requests, series tours, or operational discussions,
+please contact our trade team using one of the options below.
+</p>
+
+<!-- EMAIL -->
+<p style="margin-top:30px;">
+<a
+id="emailLink"
+href="#"
+style="
+display:inline-block;
+padding:14px 22px;
+background:#0b3c5d;
+color:#ffffff;
+text-decoration:none;
+border-radius:4px;
+font-size:16px;
+"
+>
+Email Trade Enquiries
+</a>
+</p>
+
+<!-- WHATSAPP + PHONE -->
+<p style="margin-top:30px;font-size:16px;">
+<strong>Alternative contact options:</strong><br><br>
+
+<a href="https://wa.me/447000000000" target="_blank">
+WhatsApp (Operations)
+</a>
+<br><br>
+<a href="tel:+447000000000">
++44 7000 000000
+</a>
+</p>
+
+<p style="margin-top:40px;font-size:14px;color:#555;">
+Please include group size, travel dates, routing, and any operational
+requirements where possible. Retail enquiries will not be responded to.
+</p>
+
+</main>
+
+<!-- EMAIL SCRIPT (spam-resistant, bulletproof) -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+const email =
+"enquiries" + "@" + "yourcompany" + "." + "com";
+
+const subject = encodeURIComponent(
+"UK Inbound Ground Transport Enquiry"
+);
+
+const body = encodeURIComponent(
+"Company Name:\n" +
+"Contact Name:\n" +
+"Email:\n" +
+"Group Size:\n" +
+"Travel Dates:\n" +
+"Routing:\n\n" +
+"Additional Notes:\n"
+);
+
+document
+.getElementById("emailLink")
+.setAttribute(
+"href",
+`mailto:${email}?subject=${subject}&body=${body}`
+);
+});
+</script>
+
+</body>
+</html>
+
+
+
