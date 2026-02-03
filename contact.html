@@ -1,61 +1,12 @@
-<section class="contact-section">
-<div class="contact-container">
+/* CONTACT PAGE VISIBILITY FIX */
+.contact-section {
+display: block !important;
+visibility: visible !important;
+opacity: 1 !important;
+height: auto !important;
+position: static !important;
+}
 
-<h1>Trade Enquiries</h1>
-<p>UK Inbound Ground Transport (Trade Only)</p>
-
-<a
-id="emailTradeBtn"
-href="#"
-style="
-display:inline-block;
-padding:14px 24px;
-background:#0b3c5d;
-color:#fff;
-text-decoration:none;
-border-radius:4px;
-font-size:16px;
-"
->
-Email Trade Enquiries
-</a>
-
-<p style="margin-top:30px;">
-<a href="https://wa.me/447000000000">WhatsApp (Operations)</a>
-|
-<a href="tel:+447000000000">+44 7000 000000</a>
-</p>
-
-</div>
-</section>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-const email =
-"enquiries" + "@" + "inboundtransport" + "." + "com";
-
-const subject = encodeURIComponent(
-"UK Inbound Ground Transport Enquiry"
-);
-
-const body = encodeURIComponent(
-"Company Name:\n" +
-"Contact Name:\n" +
-"Email:\n" +
-"Group Size:\n" +
-"Travel Dates:\n" +
-"Routing:\n\n" +
-"Additional Notes:\n"
-);
-
-document
-.getElementById("emailTradeBtn")
-.setAttribute(
-"href",
-`mailto:${email}?subject=${subject}&body=${body}`
-);
-
-});
-</script>
-
+.contact-container {
+min-height: 300px;
+}
