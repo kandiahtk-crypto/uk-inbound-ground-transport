@@ -187,4 +187,28 @@ min-height: unset;
 padding: 20px 16px;
 }
 }
+<section class="hero">
+<div class="hero-inner">
+
+<img
+src="hero.jpg"
+alt="UK inbound trade transport services"
+class="hero-image"
+/>
+
+<div class="hero-content">
+<h1>UK Inbound Trade Transport</h1>
+<p>
+Ground transport partner for international tour operators,
+series tours, and trade-only groups.
+</p>
+
+<a href="#rfq" class="hero-cta">
+Submit Trade Transport RFQ
+</a>
+</div>
+
+</div>
+</section>
+
 
