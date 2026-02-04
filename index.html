@@ -79,7 +79,7 @@ margin-bottom: 16px;
 }
 
 .hero p {
-max-width: 760px;
+max-width: 780px;
 margin: auto;
 margin-bottom: 28px;
 font-size: 1.05rem;
@@ -141,10 +141,24 @@ margin-bottom: 10px;
 /* ===== FOOTER ===== */
 footer {
 background: var(--blue-dark);
-padding: 24px;
+padding: 32px 16px;
+margin-top: 60px;
+}
+
+.footer-wrap {
+max-width: 1100px;
+margin: auto;
 text-align: center;
-font-size: 0.85rem;
-opacity: 0.9;
+font-size: 0.9rem;
+}
+
+.footer-markets {
+margin: 16px 0;
+display: flex;
+justify-content: center;
+gap: 16px;
+flex-wrap: wrap;
+font-weight: 600;
 }
 
 /* ===== MOBILE ===== */
@@ -195,10 +209,10 @@ font-size: 1.8rem;
 <section class="hero">
 <h1>Trade-Only UK Inbound Ground Transport</h1>
 <p>
-Ever Shine Coaches Limited is a professional UK ground transport partner
-for international tour operators, wholesalers, and DMCs.
-We specialise in group travel, series tours, and guaranteed departures.
-Ground transport only — no retail work.
+Ever Shine Coaches Limited is a professional UK inbound ground transport
+supplier working exclusively with international tour operators,
+wholesalers, and DMCs. We specialise in group travel, series tours,
+and guaranteed departures. Ground transport only — no retail work.
 </p>
 
 <a href="#contact" class="cta">Request Trade Transport Quote</a>
@@ -206,33 +220,43 @@ Ground transport only — no retail work.
 </section>
 
 <section class="images">
-<img src="images/coach.jpg" alt="UK luxury coach transport">
-<img src="images/skype.jpg" alt="Skype coordination with trade partners">
+<img src="images/coach.jpg" alt="UK coach transport services">
+<img src="images/skype.jpg" alt="Skype coordination with international partners">
 </section>
 
 <section id="services" class="services">
 <div class="service">
 <h3>Group & Series Tours</h3>
-<p>Fixed pricing, guaranteed departures, and scalable capacity.</p>
+<p>Fixed pricing, guaranteed departures, and repeat programmes.</p>
 </div>
 <div class="service">
 <h3>International Trade Focus</h3>
-<p>Experienced with China, India, USA, and European operators.</p>
+<p>Experienced with long-haul and European inbound markets.</p>
 </div>
 <div class="service">
 <h3>Dedicated Coordination</h3>
-<p>Direct operations support via email and Skype.</p>
+<p>Direct operational support via email and Skype.</p>
 </div>
 <div class="service">
 <h3>UK-Wide Coverage</h3>
-<p>London, regional routes, multi-day touring itineraries.</p>
+<p>London, regional touring, and multi-day itineraries.</p>
 </div>
 </section>
 
 <footer id="contact">
+<div class="footer-wrap">
 <p><strong>Ever Shine Coaches Limited</strong></p>
 <p>Trade-only UK inbound ground transport supplier</p>
-<p>Skype available for operations & coordination</p>
+
+<div class="footer-markets">
+<span>USA</span>
+<span>China</span>
+<span>India</span>
+<span>Europe</span>
+</div>
+
+<p>Skype available for trade coordination and operations</p>
+</div>
 </footer>
 
 <script>
@@ -248,6 +272,3 @@ nav.classList.toggle('active');
 
 </body>
 </html>
-
-
-
