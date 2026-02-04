@@ -1,89 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Trade RFQ | UK Inbound Ground Transport</title>
-<meta name="description" content="Submit a trade-only RFQ for UK inbound ground transport services.">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
-<nav class="nav">
-<a href="index.html">Home</a>
-<a href="china.html">China</a>
-<a href="india.html">India</a>
-<a href="usa.html">USA</a>
-<a href="europe.html">Europe</a>
-<a href="contact.html">RFQ</a>
-</nav>
-</header>
-
 <section class="hero">
 <h1>Trade Transport RFQ</h1>
 <p>
-This enquiry form is for <strong>tour operators, wholesalers, and DMCs only</strong>.
-We do not provide quotes to retail passengers or end customers.
+This enquiry form is strictly for tour operators, wholesalers, and DMCs.
+Retail passenger enquiries will not be processed.
 </p>
 </section>
 
-<section class="section">
-<form
-action="https://formspree.io/f/xxxxxx"
-method="POST"
-enctype="multipart/form-data"
->
+<section>
+<form method="post">
+<label>Company Name</label><br>
+<input type="text" name="company"><br><br>
 
-<label>Company Name<br>
-<input type="text" name="company" required>
-</label><br><br>
+<label>Contact Name</label><br>
+<input type="text" name="contact"><br><br>
 
-<label>Contact Name<br>
-<input type="text" name="name" required>
-</label><br><br>
+<label>Email</label><br>
+<input type="email" name="email"><br><br>
 
-<label>Email Address<br>
-<input type="email" name="email" required>
-</label><br><br>
-
-<label>Source Market<br>
-<select name="market" required>
+<label>Source Market</label><br>
+<select name="market">
 <option>China</option>
 <option>India</option>
 <option>USA</option>
 <option>Europe</option>
-<option>Other</option>
-</select>
-</label><br><br>
+</select><br><br>
 
-<label>Programme Type<br>
-<select name="programme">
-<option>Group Tour</option>
-<option>Series / Fixed Departures</option>
-<option>Escorted Programme</option>
-<option>Other</option>
-</select>
-</label><br><br>
+<label>Programme Details</label><br>
+<textarea name="details"></textarea><br><br>
 
-<label>Upload Itinerary (PDF / DOC / XLS)<br>
-<input type="file" name="itinerary" accept=".pdf,.doc,.docx,.xls,.xlsx">
-</label><br><br>
-
-<label>Additional Notes<br>
-<textarea name="message" rows="5"></textarea>
-</label><br><br>
-
-<button class="cta" type="submit">Submit Trade RFQ</button>
-
+<button type="submit">Submit RFQ</button>
 </form>
 </section>
 
-<footer>
-© Evershine Coaches Limited
-</footer>
+<footer>© Evershine Coaches Limited</footer>
 
-</body>
-</html>
 
