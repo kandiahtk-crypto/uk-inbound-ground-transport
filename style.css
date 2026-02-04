@@ -116,3 +116,50 @@ section {
 margin: 1.5rem 0.75rem;
 }
 }
+/* Header */
+.site-header {
+background: #0b3c5d;
+color: #fff;
+}
+
+.header-inner {
+max-width: 1100px;
+margin: 0 auto;
+padding: 1rem 1.25rem;
+}
+
+.logo {
+font-weight: 600;
+font-size: 1.05rem;
+margin-bottom: 0.75rem;
+}
+
+/* Navigation */
+.site-nav a {
+display: block;
+color: #fff;
+text-decoration: none;
+padding: 0.4rem 0;
+font-size: 0.95rem;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+.header-inner {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo {
+margin-bottom: 0;
+}
+
+.site-nav a {
+display: inline-block;
+margin-left: 1.2rem;
+}
+}
+
+
+
