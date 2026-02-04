@@ -10,13 +10,15 @@ line-height: 1.7;
 color: #1f1f1f;
 background: #f6f7f9;
 }
-
 /* Header */
 header {
-background: #0b3c5d;
-color: #fff;
-padding: 1.2rem;
+background: #f5f7fa;
+color: #0b1f33;
+padding: 1.6rem 1.2rem;
+text-align: center;
+border-bottom: 1px solid #e1e5ea;
 }
+
 /* Site title (small brand text in header) */
 .site-title {
 font-size: 1.1rem;
