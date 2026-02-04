@@ -180,5 +180,11 @@ margin: 1.5rem auto;
 .hero-bg { display: none; }
 .hero-img { display: block; width: 100%; }
 }
-
+@media (max-width: 768px) {
+.hero {
+height: auto;
+min-height: unset;
+padding: 20px 16px;
+}
+}
 
