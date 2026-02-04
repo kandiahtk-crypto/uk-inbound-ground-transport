@@ -17,10 +17,11 @@ background: #0b3c5d;
 color: #fff;
 padding: 1.2rem;
 }
-
-header h1 {
-font-size: 1.3rem;
+/* Site title (small brand text in header) */
+.site-title {
+font-size: 1.1rem;
 font-weight: 600;
+margin-bottom: 0.5rem;
 }
 
 nav {
