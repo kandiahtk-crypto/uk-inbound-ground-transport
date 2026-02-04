@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>UK Inbound Ground Transport | Trade Only</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ever Shine Coaches Limited | UK Inbound Ground Transport</title>
 
 <style>
 :root {
---bg: #0e3a4f;
---bg-dark: #082b3a;
---accent: #ffffff;
---cta: #ffffff;
+--blue: #0e3a4f;
+--blue-dark: #082b3a;
+--white: #ffffff;
 --text: #e6f1f5;
 }
 
@@ -22,20 +21,20 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
-background: var(--bg);
+background: var(--blue);
 color: var(--text);
-line-height: 1.5;
+line-height: 1.6;
 }
 
 /* ===== HEADER ===== */
 header {
-background: var(--bg-dark);
+background: var(--blue-dark);
 padding: 16px;
 }
 
-.nav-container {
+.nav-wrap {
 max-width: 1100px;
-margin: 0 auto;
+margin: auto;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -68,9 +67,9 @@ cursor: pointer;
 
 /* ===== HERO ===== */
 .hero {
-padding: 60px 16px 40px;
 max-width: 1100px;
-margin: 0 auto;
+margin: auto;
+padding: 60px 16px 40px;
 text-align: center;
 }
 
@@ -81,15 +80,16 @@ margin-bottom: 16px;
 
 .hero p {
 max-width: 760px;
-margin: 0 auto 28px;
+margin: auto;
+margin-bottom: 28px;
 font-size: 1.05rem;
 }
 
 .cta {
 display: inline-block;
-background: var(--cta);
+background: var(--white);
 color: #083040;
-padding: 14px 26px;
+padding: 14px 28px;
 border-radius: 6px;
 text-decoration: none;
 font-weight: 700;
@@ -102,23 +102,23 @@ opacity: 0.85;
 }
 
 /* ===== IMAGES ===== */
-.image-section {
+.images {
 max-width: 1100px;
-margin: 40px auto;
+margin: 50px auto;
 padding: 0 16px;
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 20px;
 }
 
-.image-section img {
+.images img {
 width: 100%;
 border-radius: 8px;
 object-fit: cover;
 }
 
-/* ===== COUNTRIES ===== */
-.countries {
+/* ===== SERVICES ===== */
+.services {
 max-width: 1100px;
 margin: 50px auto;
 padding: 0 16px;
@@ -128,19 +128,19 @@ gap: 20px;
 text-align: center;
 }
 
-.country {
-background: rgba(255,255,255,0.05);
+.service {
+background: rgba(255,255,255,0.06);
 padding: 24px;
 border-radius: 8px;
 }
 
-.country h3 {
+.service h3 {
 margin-bottom: 10px;
 }
 
 /* ===== FOOTER ===== */
 footer {
-background: var(--bg-dark);
+background: var(--blue-dark);
 padding: 24px;
 text-align: center;
 font-size: 0.85rem;
@@ -163,11 +163,11 @@ display: flex;
 display: block;
 }
 
-.image-section {
+.images {
 grid-template-columns: 1fr;
 }
 
-.countries {
+.services {
 grid-template-columns: 1fr 1fr;
 }
 
@@ -181,74 +181,73 @@ font-size: 1.8rem;
 <body>
 
 <header>
-<div class="nav-container">
-<div class="logo">UK Inbound Ground Transport</div>
-
+<div class="nav-wrap">
+<div class="logo">Ever Shine Coaches Limited</div>
 <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-
 <nav>
-<a href="/">Home</a>
-<a href="/china.html">China</a>
-<a href="/india.html">India</a>
-<a href="/usa.html">USA</a>
-<a href="/europe.html">Europe</a>
+<a href="index.html">Home</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
 </nav>
 </div>
 </header>
 
 <section class="hero">
 <h1>Trade-Only UK Inbound Ground Transport</h1>
-
 <p>
-Professional UK ground transport partner for international tour operators,
-wholesalers, and DMCs delivering group and series travel.
-Ground-only specialist. No retail work. No repricing games.
+Ever Shine Coaches Limited is a professional UK ground transport partner
+for international tour operators, wholesalers, and DMCs.
+We specialise in group travel, series tours, and guaranteed departures.
+Ground transport only — no retail work.
 </p>
 
-<a class="cta" href="/rfq.html">Submit Trade Transport RFQ</a>
-<div class="cta-note">Trade accounts only · RFQs reviewed within 24 hours</div>
+<a href="#contact" class="cta">Request Trade Transport Quote</a>
+<div class="cta-note">Trade accounts only · Skype coordination available</div>
 </section>
 
-<section class="image-section">
-<!-- Coach image -->
-<img src="/images/coach.jpg" alt="UK coach transport">
-
-<!-- Skype / coordination image -->
-<img src="/images/skype-meeting.jpg" alt="Trade coordination via Skype">
+<section class="images">
+<img src="images/coach.jpg" alt="UK luxury coach transport">
+<img src="images/skype.jpg" alt="Skype coordination with trade partners">
 </section>
 
-<section class="countries">
-<div class="country">
-<h3>China</h3>
-<p>Series tours, fixed pricing, Mandarin-aware operations.</p>
+<section id="services" class="services">
+<div class="service">
+<h3>Group & Series Tours</h3>
+<p>Fixed pricing, guaranteed departures, and scalable capacity.</p>
 </div>
-<div class="country">
-<h3>India</h3>
-<p>Guaranteed departures and complex multi-day routing.</p>
+<div class="service">
+<h3>International Trade Focus</h3>
+<p>Experienced with China, India, USA, and European operators.</p>
 </div>
-<div class="country">
-<h3>USA</h3>
-<p>High-expectation service with clear cost controls.</p>
+<div class="service">
+<h3>Dedicated Coordination</h3>
+<p>Direct operations support via email and Skype.</p>
 </div>
-<div class="country">
-<h3>Europe</h3>
-<p>DMC-friendly execution and scalable capacity.</p>
+<div class="service">
+<h3>UK-Wide Coverage</h3>
+<p>London, regional routes, multi-day touring itineraries.</p>
 </div>
 </section>
 
-<footer>
-© UK Inbound Ground Transport · Trade-Only Supplier
+<footer id="contact">
+<p><strong>Ever Shine Coaches Limited</strong></p>
+<p>Trade-only UK inbound ground transport supplier</p>
+<p>Skype available for operations & coordination</p>
 </footer>
 
 <script>
+document.addEventListener('DOMContentLoaded', function () {
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('nav');
 
-toggle.addEventListener('click', () => {
+toggle.addEventListener('click', function () {
 nav.classList.toggle('active');
+});
 });
 </script>
 
 </body>
 </html>
+
+
 
