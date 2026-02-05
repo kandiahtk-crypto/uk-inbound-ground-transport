@@ -73,7 +73,31 @@ nav {
 gap: 10px;
 }
 }
+:root {
+  --accent: #1f2933; /* default */
+}
+
+/* China */
+body.china { --accent: #8b1d1d; }
+
+/* India */
+body.india { --accent: #c46a00; }
+
+/* USA */
+body.usa { --accent: #0f2a44; }
+
+/* Europe */
+body.europe { --accent: #2f3a40; }
+
+/* Accent usage */
+h1, h2, nav a:hover {
+  color: var(--accent);
+}
+
+.button, .cta {
+  background: var(--accent);
+  color: white;
+}
 
 
-null
 
