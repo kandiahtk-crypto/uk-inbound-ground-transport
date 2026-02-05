@@ -218,5 +218,33 @@ footer {
     margin: 3rem auto;
   }
 }
+/* ===============================
+   V2 — PREMIUM POLISH
+   =============================== */
 
+/* Section rhythm */
+main section {
+  margin-bottom: 3.5rem;
+}
+
+/* Narrower reading width = premium */
+main p,
+main ul {
+  max-width: 720px;
+}
+
+/* Softer headings */
+h1 {
+  line-height: 1.15;
+}
+
+h2 {
+  letter-spacing: -0.01em;
+}
+
+/* Subtle divider (not loud) */
+main section + section {
+  padding-top: 1.5rem;
+  border-top: 1px solid #eef1f5;
+}
 
