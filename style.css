@@ -247,4 +247,13 @@ main section + section {
   padding-top: 1.5rem;
   border-top: 1px solid #eef1f5;
 }
-
+/* Accent underline on H1 */
+h1::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--accent);
+  margin-top: 0.6rem;
+  border-radius: 2px;
+}
