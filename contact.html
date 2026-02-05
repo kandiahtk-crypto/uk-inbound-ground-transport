@@ -1,49 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Trade RFQ | Evershine Coaches Limited</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Trade RFQ | UK Inbound Ground Transport</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<header>
-<h2>UK Inbound Ground Transport</h2>
-<nav>
-<a href="index.html">Home</a>
-<a href="china.html">China</a>
-<a href="india.html">India</a>
-<a href="usa.html">USA</a>
-<a href="europe.html">Europe</a>
-<a href="contact.html">RFQ / Contact</a>
-</nav>
-</header>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="header-inner">
+      <div class="site-title">UK Inbound Ground Transport</div>
 
-<main>
-<h1>Trade RFQ & Contact</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="china.html">China</a>
+        <a href="india.html">India</a>
+        <a href="usa.html">USA</a>
+        <a href="europe.html">Europe</a>
+        <a href="contact.html">RFQ / Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<p>
-<strong>Evershine Coaches Limited</strong><br>
-📞 +44 7000 000000<br>
-📧 Trade enquiries only
-</p>
+  <!-- ================= MAIN ================= -->
+  <main>
 
-<form action="https://formspree.io/f/REPLACE_ME" method="POST" enctype="multipart/form-data">
-<p><input type="text" name="company" placeholder="Company Name" required></p>
-<p><input type="email" name="email" placeholder="Work Email" required></p>
-<p><input type="text" name="market" placeholder="Market (China / India / USA / Europe)"></p>
-<p><input type="file" name="itinerary" accept=".pdf,.xlsx,.xls"></p>
-<p><button type="submit">Submit Trade Enquiry</button></p>
-</form>
+    <!-- HERO -->
+    <section>
+      <h1>Trade RFQ & Enquiries</h1>
 
-<p>
-<a href="https://wa.me/447000000000" target="_blank">WhatsApp Trade Enquiries</a>
-</p>
+      <p>
+        This form is intended for overseas tour operators, wholesalers, and
+        destination management companies only.
+      </p>
 
-</main>
+      <p>
+        We do not accept enquiries from retail passengers or individual travellers.
+      </p>
+    </section>
 
-<footer>© Evershine Coaches Limited</footer>
+    <!-- RFQ FORM -->
+    <section>
+      <h2>Request UK Ground Transport Rates</h2>
+
+      <!-- FORM: Replace YOUR_EMAIL below -->
+      <form
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+
+        <label for="company">Company Name</label>
+        <input type="text" id="company" name="company" required />
+
+        <label for="contact">Contact Name</label>
+        <input type="text" id="contact" name="contact" required />
+
+        <label for="email">Business Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="market">Market</label>
+        <select id="market" name="market" required>
+          <option value="">Select market</option>
+          <option>China</option>
+          <option>India</option>
+          <option>USA</option>
+          <option>Europe</option>
+        </select>
+
+        <label for="message">Programme Details</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Please outline itinerary, dates, group size, and routing"
+          required
+        ></textarea>
+
+        <label for="file">Upload Itinerary (PDF / DOC / XLS)</label>
+        <input
+          type="file"
+          id="file"
+          name="attachment"
+          accept=".pdf,.doc,.docx,.xls,.xlsx"
+        />
+
+        <button type="submit">Submit Trade RFQ</button>
+
+      </form>
+    </section>
+
+    <!-- CONTACT DETAILS -->
+    <section>
+      <h2>Direct Contact</h2>
+
+      <p>
+        If you prefer to discuss your UK programme directly, you may contact
+        our operations team via WhatsApp or email.
+      </p>
+
+      <p>
+        <strong>Company:</strong> Evershine Coaches Limited<br />
+        <strong>Email:</strong> your@email.com<br />
+        <strong>WhatsApp:</strong> +44 XXXXXXXXXX
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    © Evershine Coaches Limited
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/44XXXXXXXXXX" class="whatsapp-float">
+    WhatsApp
+  </a>
+
 </body>
 </html>
 
