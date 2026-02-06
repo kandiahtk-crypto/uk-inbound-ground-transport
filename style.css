@@ -10,7 +10,7 @@
   padding: 0;
 }
 header {
-  background: #0b3c5d; /* default fallback */
+  background: var(--accent, #0b3c5d);
   color: #ffffff;
 }
 
