@@ -1,174 +1,20 @@
-/* =================================================
-   ENTERPRISE MODERN – CONFIDENT
-   UK INBOUND GROUND TRANSPORT
-================================================= */
-
-/* RESET */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* ROOT */
-:root {
-  --brand-navy: #0A2E4E;
-  --steel-blue: #1F4E79;
-  --bg-main: #F4F6F9;
-  --bg-white: #FFFFFF;
-  --text-main: #1C2530;
-  --text-muted: #5F6B7A;
-}
-
-/* MARKET ACCENTS */
-body.usa    { --accent: #0F2A44; }
-body.europe { --accent: #2F3A40; }
-body.india  { --accent: #8A6D3B; }
-body.china  { --accent: #8B1D1D; }
-body        { --accent: var(--brand-navy); }
-
-/* BASE */
-body {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  background: var(--bg-main);
-  color: var(--text-main);
-  line-height: 1.6;
-}
-
-/* CONTAINER (LOCKED) */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* ================================
-   HEADER – ENTERPRISE STABLE
-================================ */
-header {
-  background: var(--bg-white);
-  border-bottom: 1px solid #e5e7eb;
-}
-
-/* NAV BAR */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 0;
-}
-
-/* LEFT NAV */
-.nav-left {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.brand {
-  font-weight: 700;
-  font-size: 18px;
-  color: var(--text-main);
-  text-decoration: none;
-}
-
-.nav-links {
-  display: flex;
-  gap: 18px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  font-size: 14px;
-  color: var(--text-muted);
-}
-
-.nav-links a:hover {
-  color: var(--text-main);
-}
-
-/* RIGHT NAV (RFQ) */
-.nav-right a {
-  text-decoration: none;
-  background: var(--accent);
-  color: #ffffff;
-  padding: 10px 18px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-/* ================================
-   MOBILE NAV (STACKED, CALM)
-================================ */
+/* MOBILE NAV POLISH */
 @media (max-width: 1023px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
-
-  .nav-left {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
+  .nav-left,
   .nav-links {
-    flex-direction: column;
-    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-links a {
+    padding: 6px 0;
   }
 
   .nav-right {
-    margin-top: 10px;
+    width: 100%;
   }
-}
 
-/* ================================
-   HERO & SECTIONS
-================================ */
-section {
-  padding: 70px 0;
-}
-
-.hero h1 {
-  font-size: 38px;
-  margin-bottom: 18px;
-}
-
-.hero p {
-  max-width: 720px;
-  color: var(--text-muted);
-  font-size: 17px;
-}
-
-/* ================================
-   FOOTER
-================================ */
-.site-footer {
-  background: var(--brand-navy);
-  color: #ffffff;
-  padding: 40px 0;
-}
-
-.site-footer p {
-  font-size: 13px;
-  opacity: 0.85;
-  text-align: center;
-}
-
-/* ================================
-   WHATSAPP
-================================ */
-.whatsapp {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  background: #25d366;
-  color: #ffffff;
-  padding: 14px 18px;
-  border-radius: 999px;
-  font-weight: 600;
-  text-decoration: none;
-  z-index: 1000;
+  .nav-right a {
+    width: 100%;
+    text-align: center;
+  }
 }
