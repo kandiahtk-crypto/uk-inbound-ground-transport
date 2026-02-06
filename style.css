@@ -148,3 +148,7 @@ section p {
     font-size: 26px;
   }
 }
+nav a:last-child {
+  margin-left: auto;
+  font-weight: 600;
+}
