@@ -785,19 +785,21 @@ grid-row:auto;
 }
 
 .nav-inner{
-  min-height:88px;
-  display:grid;
-  grid-template-columns:280px 1fr auto auto;
-  align-items:center;
-  gap:24px;
+min-height:88px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:12px;
 }
 
 .logo{
-  font-family:"Cormorant Garamond", serif;
-  font-size:28px;
-  line-height:.95;
-  color:var(--blue-deep);
-  text-decoration:none;
+font-family:"Cormorant Garamond", serif;
+font-size:18px;
+line-height:1;
+color:var(--blue-deep);
+text-decoration:none;
+letter-spacing:.02em;
+white-space:nowrap;
 }
 
 .main-menu{
