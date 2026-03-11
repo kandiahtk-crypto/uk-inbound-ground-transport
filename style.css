@@ -168,7 +168,7 @@ rgba(22,30,38,.35) 40%,
 rgba(22,30,38,.10) 70%,
 rgba(22,30,38,.05) 100%
 ),
-url("images/hero-uk-touring.jpeg") center/cover no-repeat;
+url("hero-uk-touring.jpeg") center/cover no-repeat;
 }
 .hero-inner{
 position:relative;
@@ -178,7 +178,7 @@ padding:90px 0;
 }
 
 .hero-copy{
-max-width:700px;
+max-width:760px;
 }
 
 .eyebrow,
