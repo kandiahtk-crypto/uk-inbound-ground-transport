@@ -9,7 +9,6 @@
 --blue-deep:#1d3249;
 --copper:#b86447;
 --copper-dark:#964b33;
---gold:#c4a46a;
 --white:#ffffff;
 }
 
@@ -29,6 +28,11 @@ color:var(--text);
 font-family:"Inter", sans-serif;
 -webkit-font-smoothing:antialiased;
 -moz-osx-font-smoothing:grayscale;
+}
+
+img{
+max-width:100%;
+display:block;
 }
 
 a{
@@ -53,7 +57,7 @@ color:#2d2a26;
 
 h1{
 font-size:clamp(48px, 6vw, 82px);
-line-height:.95;
+line-height:1.02;
 }
 
 h2{
@@ -141,42 +145,43 @@ background:var(--copper);
 color:#fff;
 font-size:14px;
 font-weight:600;
-transition:background .2s ease, transform .2s ease;
 }
 
 .header-cta:hover{
 background:var(--copper-dark);
-transform:translateY(-1px);
 }
 
 /* HERO */
 .hero{
 position:relative;
 min-height:760px;
-display:flex;
-align-items:center;
 overflow:hidden;
 background:#d8d0c2;
 }
 
-.hero-overlay {
-background-image:
-linear-gradient(
-90deg,
-rgba(22,30,38,.55) 0%,
-rgba(22,30,38,.35) 40%,
-rgba(22,30,38,.10) 70%,
-rgba(22,30,38,.05) 100%
-),
-url("https://kandiahtk-crypto.github.io/uk-inbound-ground-transport/hero-uk-touring.jpeg");
-
-background-position:center;
-background-size:cover;
-background-repeat:no-repeat;
+.hero-image{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
 }
+
+.hero-overlay{
+position:absolute;
+inset:0;
+background:linear-gradient(
+90deg,
+rgba(22,30,38,.58) 0%,
+rgba(22,30,38,.34) 42%,
+rgba(22,30,38,.12) 72%,
+rgba(22,30,38,.05) 100%
+);
+}
+
 .hero-inner{
 position:relative;
-z-index:1;
+z-index:2;
 width:100%;
 padding:90px 0;
 }
@@ -195,7 +200,7 @@ text-transform:uppercase;
 }
 
 .eyebrow{
-color:rgba(255,255,255,.80);
+color:rgba(255,255,255,.82);
 }
 
 .section-kicker{
@@ -205,13 +210,13 @@ color:var(--copper);
 .hero h1{
 margin-top:18px;
 color:#fff;
-max-width:10ch;
+max-width:11ch;
 }
 
 .hero p{
 margin-top:22px;
 max-width:38ch;
-color:rgba(255,255,255,.90);
+color:rgba(255,255,255,.92);
 }
 
 .hero-actions{
@@ -230,7 +235,6 @@ padding:0 26px;
 border-radius:999px;
 font-size:15px;
 font-weight:600;
-transition:all .2s ease;
 }
 
 .btn-primary{
@@ -240,7 +244,6 @@ color:#fff;
 
 .btn-primary:hover{
 background:var(--copper-dark);
-transform:translateY(-1px);
 }
 
 .btn-outline{
@@ -255,7 +258,7 @@ background:rgba(255,255,255,.16);
 }
 
 .btn-outline-light{
-border-color:rgba(255,255,255,.25);
+border-color:rgba(255,255,255,.24);
 }
 
 /* TRUST */
@@ -323,21 +326,15 @@ max-width:34ch;
 
 .image-block{
 min-height:520px;
-border-radius:6px;
+border-radius:8px;
 overflow:hidden;
 box-shadow:0 20px 50px rgba(24,33,44,.10);
 }
 
-.image-block-a{
-background:
-linear-gradient(rgba(20,20,20,.16), rgba(20,20,20,.16)),
-url("hero-uk-touring.jpeg");
-}
-
-.image-block-b{
-background-image;
-linear-gradient(rgba(20,20,20,.18), rgba(20,20,20,.18)),
-url("hero-usa.jpg") center/cover no-repeat;
+.image-block img{
+width:100%;
+height:100%;
+object-fit:cover;
 }
 
 .section-head{
@@ -473,8 +470,8 @@ gap:10px;
 color:#403a34;
 }
 
-/* RESPONSIVE */
-@media (max-width: 1100px){
+/* MOBILE */
+@media (max-width:1100px){
 .main-header-inner,
 .trust-grid,
 .split-grid,
@@ -496,7 +493,7 @@ max-width:none;
 }
 }
 
-@media (max-width: 700px){
+@media (max-width:700px){
 .container{
 width:min(100% - 32px, 1200px);
 }
@@ -557,6 +554,4 @@ min-height:300px;
 padding:24px;
 }
 }
-
-
 
