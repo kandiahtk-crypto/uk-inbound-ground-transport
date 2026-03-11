@@ -1259,3 +1259,106 @@ letter-spacing:.02em;
 max-width:280px;
 }
 
+/* ===== MOBILE LUXURY POLISH ===== */
+
+@media (max-width:700px){
+
+/* HEADER HEIGHT */
+.nav-inner{
+min-height:76px;
+padding:12px 0;
+}
+
+/* LOGO */
+.logo{
+font-size:20px;
+max-width:220px;
+line-height:1;
+letter-spacing:.01em;
+}
+
+/* HAMBURGER MENU */
+.menu-toggle{
+font-size:22px;
+padding:6px 8px;
+}
+
+/* TOP STRIP */
+.service-bar{
+font-size:12px;
+}
+
+.service-inner{
+gap:8px;
+padding:8px 0 10px;
+}
+
+/* HERO IMAGE */
+.hero{
+min-height:460px;
+}
+
+.hero-inner{
+padding:60px 0 40px;
+}
+
+.hero h1{
+font-size:clamp(32px, 9vw, 44px);
+line-height:1.05;
+}
+
+.hero p{
+font-size:16px;
+line-height:1.6;
+}
+
+/* TRUST STRIP */
+.trust-grid{
+grid-template-columns:1fr;
+gap:18px;
+padding:22px 0;
+}
+
+.trust-item strong{
+font-size:15px;
+}
+
+.trust-item span{
+font-size:14px;
+line-height:1.5;
+}
+
+/* IMAGE BLOCKS */
+.image-block,
+.fleet-showcase-image{
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 24px 60px rgba(24,33,44,.10);
+}
+
+.image-block img,
+.fleet-showcase-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* SECTION SPACING */
+.section{
+padding:56px 0;
+}
+
+/* HEADINGS */
+h2{
+font-size:clamp(30px, 8vw, 40px);
+line-height:1.05;
+}
+
+/* TEXT */
+p{
+font-size:16px;
+line-height:1.7;
+}
+
+}
+
