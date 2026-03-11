@@ -1248,3 +1248,14 @@ grid-row:auto;
     max-width:none;
   }
 }
+
+.logo{
+font-family:"Cormorant Garamond", serif;
+font-size:24px;
+line-height:1.05;
+color:var(--blue-deep);
+text-decoration:none;
+letter-spacing:.02em;
+max-width:280px;
+}
+
