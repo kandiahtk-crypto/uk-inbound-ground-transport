@@ -330,11 +330,11 @@ box-shadow:0 20px 50px rgba(24,33,44,.10);
 .image-block-a{
 background:
 linear-gradient(rgba(20,20,20,.16), rgba(20,20,20,.16)),
-url("hero-uk-touring.jpeg") center/cover no-repeat;
+url("hero-uk-touring.jpeg");
 }
 
 .image-block-b{
-background:
+background-image;
 linear-gradient(rgba(20,20,20,.18), rgba(20,20,20,.18)),
 url("hero-usa.jpg") center/cover no-repeat;
 }
