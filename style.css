@@ -160,7 +160,7 @@ background:#d8d0c2;
 }
 
 .hero-overlay {
-background:
+background-image:
 linear-gradient(
 90deg,
 rgba(22,30,38,.55) 0%,
@@ -168,7 +168,10 @@ rgba(22,30,38,.35) 40%,
 rgba(22,30,38,.10) 70%,
 rgba(22,30,38,.05) 100%
 ),
-url("hero-uk-touring.jpeg") center/cover no-repeat;
+url("https://kandiahtk-crypto.github.io/uk-inbound-ground-transport/hero-uk-touring.jpeg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 }
 .hero-inner{
 position:relative;
