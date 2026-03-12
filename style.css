@@ -794,19 +794,21 @@ gap:12px;
 
 .logo{
 font-family:"Cormorant Garamond", serif;
-font-size:18px;
+font-size:17px;
 line-height:1;
 color:var(--blue-deep);
 text-decoration:none;
-letter-spacing:.02em;
+letter-spacing:.03em;
 white-space:nowrap;
+font-weight:500;
 }
 
 .main-menu{
   display:flex;
   justify-content:center;
+  gap:36px;
   align-items:center;
-  gap:28px;
+  
 }
 
 .main-menu > a,
