@@ -150,183 +150,206 @@
 
 <div class="section-head">
 
-<div class="section-kicker">Travel trade enquiries</div>
+<div class="section-kicker">Travel Trade Enquiries</div>
 
-<h2>
-Discuss your touring programme
-</h2>
+<h2>Discuss your touring programme</h2>
 
 <p class="intro-text">
-UK Inbound Ground Transport works with tour operators, destination
-management companies and organised group travel planners delivering
-touring programmes across the United Kingdom and Ireland.
+This enquiry form is intended for tour operators, destination management
+companies and organised group travel planners arranging programmes across
+the United Kingdom and Ireland.
 </p>
 
 </div>
 
 
-<div class="contact-layout">
 
-<!-- CONTACT DETAILS -->
-
-<div class="contact-card">
-
-<h3>Operations contact</h3>
-
-<p>
-<strong>Email</strong><br>
-<a href="mailto:info@ukinboundgroundtransport.com">
-info@ukinboundgroundtransport.com
-</a>
-</p>
-
-<p>
-<strong>Office</strong><br>
-<a href="tel:+442086292776">
-+44 20 8629 2776
-</a>
-</p>
-
-<p>
-<strong>Operations Mobile / WhatsApp</strong><br>
-<a href="https://wa.me/447957776778">
-+44 7957 776778
-</a>
-</p>
-
-<p>
-<strong>Company</strong><br>
-Evershine Transport Limited
-</p>
-
-<p>
-<strong>Company Registration</strong> 13507458<br>
-<strong>VAT</strong> 388919914
-</p>
-
-<p class="contact-note">
-Travel trade enquiries only.
-Please include programme dates, group size, routing outline,
-arrival airport or cruise port where applicable.
-</p>
-
-</div>
-
-
-<!-- CONTACT FORM -->
-
-<form class="contact-form"
+<form class="trade-form"
 action="https://formspree.io/f/YOURCODE"
 method="POST">
 
-<input type="hidden"
-name="_subject"
-value="UK Inbound Ground Transport Enquiry">
+<input type="hidden" name="_subject" value="UK Inbound Ground Transport Enquiry">
 
+
+
+
+<!-- CONTACT DETAILS -->
+
+<div class="form-section">
+
+<h3>Contact details</h3>
+
+<p class="form-intro">
+Who should receive the quotation and operational follow-up.
+</p>
 
 <div class="form-grid">
 
 <div class="form-field">
-<label for="name">Full name</label>
-<input type="text" id="name" name="name" required>
+<label>Company name</label>
+<input type="text" name="company" placeholder="Tour operator / DMC name" required>
 </div>
 
 <div class="form-field">
-<label for="company">Company</label>
-<input type="text" id="company" name="company">
+<label>Contact name</label>
+<input type="text" name="name" placeholder="Full name" required>
 </div>
 
 <div class="form-field">
-<label for="email">Email address</label>
-<input type="email" id="email" name="email" required>
+<label>Email</label>
+<input type="email" name="email" placeholder="name@company.com" required>
 </div>
 
 <div class="form-field">
-<label for="phone">Telephone</label>
-<input type="tel" id="phone" name="phone">
+<label>Phone / WhatsApp</label>
+<input type="tel" name="phone" placeholder="+44 / international number">
 </div>
 
-<div class="form-field">
-<label for="market">Source market</label>
-<input type="text"
-id="market"
-name="market"
-placeholder="e.g. USA, Europe, India">
 </div>
 
-<div class="form-field">
-<label for="service">Service required</label>
+</div>
 
-<select id="service" name="service">
+
+
+<!-- TRIP DETAILS -->
+
+<div class="form-section">
+
+<h3>Trip details</h3>
+
+<p class="form-intro">
+Core journey information used to assess routing, vehicle planning and pricing.
+</p>
+
+<div class="form-grid">
+
+<div class="form-field">
+<label>Service type</label>
+
+<select name="service">
 
 <option value="">Select</option>
 
-<option>
-Multi-day touring transport
-</option>
+<option>Multi-day touring</option>
 
-<option>
-Airport transfers
-</option>
+<option>Airport transfers</option>
 
-<option>
-Cruise port transport
-</option>
+<option>Cruise port transfers</option>
 
-<option>
-Shore excursion programmes
-</option>
+<option>Shore excursions</option>
 
-<option>
-Regional touring support
-</option>
+<option>Day touring</option>
 
-<option>
-Other
-</option>
+<option>Event transport</option>
+
+<option>Other</option>
 
 </select>
 
 </div>
 
+<div class="form-field">
+<label>Date(s)</label>
+<input type="text" name="dates" placeholder="e.g. 12–18 May 2026">
+</div>
 
-<div class="form-field form-field-full">
+<div class="form-field">
+<label>Preferred pickup time</label>
+<input type="text" name="pickup_time" placeholder="e.g. 09:00 / TBC">
+</div>
 
-<label for="message">
-Programme details
-</label>
+<div class="form-field">
+<label>Pickup location</label>
+<input type="text" name="pickup" placeholder="Airport / hotel / venue">
+</div>
+
+<div class="form-field">
+<label>Drop-off location</label>
+<input type="text" name="dropoff" placeholder="Hotel / city / venue">
+</div>
+
+<div class="form-field">
+<label>Vehicle preference</label>
+<input type="text" name="vehicle" placeholder="Optional">
+</div>
+
+<div class="form-field">
+<label>Passengers</label>
+<input type="number" name="passengers" placeholder="e.g. 45">
+</div>
+
+<div class="form-field">
+<label>Luggage estimate</label>
+<input type="text" name="luggage" placeholder="e.g. 45 suitcases">
+</div>
+
+<div class="form-field">
+<label>Itinerary PDF link</label>
+<input type="text" name="pdf" placeholder="Google Drive / OneDrive link (optional)">
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PROGRAMME NOTES -->
+
+<div class="form-section">
+
+<h3>Programme notes</h3>
+
+<p class="form-intro">
+Include key cities, number of days, hotel locations or operational notes.
+</p>
+
+<div class="form-field-full">
 
 <textarea
-id="message"
-name="message"
+name="notes"
 rows="6"
-placeholder="Please share itinerary outline, group size, arrival airport or cruise port, programme dates and key destinations."
-required></textarea>
+placeholder="Key cities, number of days, hotel locations, venue names, access constraints, special requirements or timing flexibility."
+required>
+</textarea>
 
 </div>
 
 </div>
 
 
-<div class="contact-submit">
 
-<button
-type="submit"
-class="btn btn-primary">
+<!-- SUBMIT -->
 
-Send Enquiry
+<div class="form-footer">
 
+<p>
+Submit once. Your enquiry will be reviewed by our operations team and
+returned with a structured transport proposal.
+</p>
+
+<div class="form-buttons">
+
+<a href="tel:+442086292776" class="btn btn-outline">
+Contact Operations
+</a>
+
+<button type="submit" class="btn btn-primary">
+Submit enquiry
 </button>
 
 </div>
+
+</div>
+
+
 
 </form>
 
 </div>
 
-</div>
-
 </section>
+
 
   
   <!-- WHAT WE SUPPORT -->
