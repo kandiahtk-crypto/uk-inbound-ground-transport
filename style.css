@@ -683,3 +683,17 @@ display:none !important;
   }
 
 }
+
+/* Fix mobile navigation */
+
+@media screen and (max-width: 980px){
+
+  .main-menu{
+    display:none !important;
+  }
+
+  .nav-cta{
+    display:none !important;
+  }
+
+}
