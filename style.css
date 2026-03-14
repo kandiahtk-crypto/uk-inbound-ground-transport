@@ -643,3 +643,15 @@ padding:62px 0;
 }
 
 }
+
+@media (max-width:980px){
+
+.main-menu{
+display:none !important;
+}
+
+.nav-cta{
+display:none !important;
+}
+
+}
