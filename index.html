@@ -599,14 +599,20 @@
   </div>
 
 </footer>
-  <script>
-const menuToggle = document.querySelector('.menu-toggle');
-const body = document.body;
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
 
-menuToggle.addEventListener('click', () => {
-  body.classList.toggle('menu-open');
+  const menuToggle = document.querySelector(".menu-toggle");
+  const body = document.body;
+
+  if(menuToggle){
+    menuToggle.addEventListener("click", function(){
+      body.classList.toggle("menu-open");
+    });
+  }
+
 });
-</script>
+</script> 
 
 </body>
 </html>
