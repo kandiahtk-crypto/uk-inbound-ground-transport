@@ -655,3 +655,17 @@ display:none !important;
 }
 
 }
+
+/* FORCE hide desktop navigation on mobile */
+
+@media (max-width: 980px){
+
+  .main-menu{
+    display:none !important;
+  }
+
+  .nav-cta{
+    display:none !important;
+  }
+
+}
