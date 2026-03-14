@@ -1,603 +1,974 @@
-<!DOCTYPE html>
-<html lang="en-GB">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+:root{
+  --bg:#f8f7f2;
+  --bg-soft:#eef5fb;
+  --panel:#ffffff;
+  --text:#203040;
+  --text-soft:#5b6b78;
+  --line:rgba(32,48,64,.10);
 
-  <title>UK &amp; Ireland Touring Transport Services for Tour Operators &amp; DMCs | UK Inbound Ground Transport</title>
-  <meta name="description" content="Trade-only inbound ground transport services for tour operators and destination management companies across the United Kingdom and Ireland, including airport transfers, cruise port transport, shore excursions and multi-day touring programmes.">
-  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
-  <meta name="author" content="Evershine Transport Limited">
-  <meta name="theme-color" content="#1d3249">
+  --blue:#8fb7d8;
+  --blue-soft:#dcecf8;
+  --blue-deep:#1f3550;
+  --gold:#c7a55b;
+  --gold-dark:#a98943;
+  --gold-soft:#f3e7c7;
+  --white:#ffffff;
+}
 
-  <link rel="canonical" href="https://ukinboundgroundtransport.com/services.html">
+/* =========================
+   RESET
+   ========================= */
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+*{
+  box-sizing:border-box;
+}
 
-  <link rel="stylesheet" href="style.css">
+html,
+body{
+  margin:0;
+  padding:0;
+}
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Inter", sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="UK &amp; Ireland Touring Transport Services for Tour Operators &amp; DMCs">
-  <meta property="og:description" content="Trade-only transport services for touring programmes, airport transfers, cruise port movements and shore excursions across the UK and Ireland.">
-  <meta property="og:url" content="https://ukinboundgroundtransport.com/services.html">
-  <meta property="og:site_name" content="UK Inbound Ground Transport">
-  <meta property="og:image" content="https://ukinboundgroundtransport.com/hero-uk-touring.jpeg">
-  <meta property="og:locale" content="en_GB">
+img{
+  max-width:100%;
+  display:block;
+}
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="UK &amp; Ireland Touring Transport Services for Tour Operators &amp; DMCs">
-  <meta name="twitter:description" content="Inbound ground transport services across the UK and Ireland for tour operators, DMCs and organised group travel programmes.">
-  <meta name="twitter:image" content="https://ukinboundgroundtransport.com/hero-uk-touring.jpeg">
+a{
+  color:inherit;
+  text-decoration:none;
+}
 
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@graph":[
-      {
-        "@type":"Organization",
-        "@id":"https://ukinboundgroundtransport.com/#organization",
-        "name":"UK Inbound Ground Transport",
-        "legalName":"Evershine Transport Limited",
-        "url":"https://ukinboundgroundtransport.com/",
-        "email":"info@ukinboundgroundtransport.com",
-        "telephone":"+44 20 8629 2776",
-        "areaServed":[
-          { "@type":"Country", "name":"United Kingdom" },
-          { "@type":"Country", "name":"Ireland" }
-        ]
-      },
-      {
-        "@type":"WebSite",
-        "@id":"https://ukinboundgroundtransport.com/#website",
-        "name":"UK Inbound Ground Transport",
-        "url":"https://ukinboundgroundtransport.com/",
-        "inLanguage":"en-GB",
-        "publisher":{
-          "@id":"https://ukinboundgroundtransport.com/#organization"
-        }
-      },
-      {
-        "@type":"WebPage",
-        "@id":"https://ukinboundgroundtransport.com/services.html#webpage",
-        "url":"https://ukinboundgroundtransport.com/services.html",
-        "name":"UK & Ireland Touring Transport Services for Tour Operators and DMCs",
-        "description":"Inbound ground transport services supporting tour operators and destination management companies delivering touring programmes across the United Kingdom and Ireland, including airport transfers, cruise port transport and shore excursions.",
-        "inLanguage":"en-GB",
-        "isPartOf":{
-          "@id":"https://ukinboundgroundtransport.com/#website"
-        },
-        "about":{
-          "@id":"https://ukinboundgroundtransport.com/#organization"
-        },
-        "primaryImageOfPage":{
-          "@type":"ImageObject",
-          "url":"https://ukinboundgroundtransport.com/hero-uk-touring.jpeg"
-        }
-      },
-      {
-        "@type":"Service",
-        "@id":"https://ukinboundgroundtransport.com/services.html#service",
-        "name":"Inbound ground transport services for tour operators and destination management companies",
-        "serviceType":[
-          "Inbound ground transport",
-          "Touring transport",
-          "Airport transfer transport",
-          "Cruise port transport",
-          "Shore excursion transport",
-          "Travel trade transport support",
-          "UK coach hire for touring programmes"
-        ],
-        "provider":{
-          "@id":"https://ukinboundgroundtransport.com/#organization"
-        },
-        "areaServed":[
-          { "@type":"Country", "name":"United Kingdom" },
-          { "@type":"Country", "name":"Ireland" }
-        ],
-        "audience":{
-          "@type":"Audience",
-          "audienceType":"Tour operators, destination management companies and organised group travel planners"
-        },
-        "description":"Structured transport support for touring programmes, airport arrivals, cruise port transfers, shore excursions and regional itineraries across the United Kingdom and Ireland."
-      },
-      {
-        "@type":"BreadcrumbList",
-        "@id":"https://ukinboundgroundtransport.com/services.html#breadcrumb",
-        "itemListElement":[
-          {
-            "@type":"ListItem",
-            "position":1,
-            "name":"Home",
-            "item":"https://ukinboundgroundtransport.com/"
-          },
-          {
-            "@type":"ListItem",
-            "position":2,
-            "name":"Services",
-            "item":"https://ukinboundgroundtransport.com/services.html"
-          }
-        ]
-      }
-    ]
+.container{
+  width:min(1200px, calc(100% - 48px));
+  margin:0 auto;
+}
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+
+h1,
+h2,
+h3{
+  margin:0;
+  font-family:"Cormorant Garamond", serif;
+  font-weight:600;
+  letter-spacing:-0.02em;
+  color:var(--blue-deep);
+}
+
+h1{
+  font-size:clamp(36px, 6vw, 72px);
+  line-height:1.02;
+}
+
+h2{
+  font-size:clamp(34px, 4vw, 56px);
+  line-height:1.02;
+}
+
+h3{
+  font-size:30px;
+  line-height:1.08;
+}
+
+p{
+  margin:0;
+  font-size:18px;
+  line-height:1.8;
+  color:var(--text-soft);
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+.lux-header{
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.service-bar{
+  background:linear-gradient(90deg, var(--gold-dark), var(--gold));
+  color:#fff;
+  font-size:13px;
+  box-shadow:0 1px 0 rgba(0,0,0,.04);
+}
+
+.service-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  padding:10px 0;
+}
+
+.lux-nav{
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(32,48,64,.08);
+}
+
+.nav-inner{
+  min-height:88px;
+  display:grid;
+  grid-template-columns:320px 1fr auto auto;
+  align-items:center;
+  gap:24px;
+}
+
+.logo{
+  display:block;
+  font-family:"Cormorant Garamond", serif;
+  font-size:20px;
+  line-height:1;
+  color:var(--blue-deep);
+  letter-spacing:.02em;
+  white-space:nowrap;
+  font-weight:600;
+}
+
+.main-menu{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:34px;
+}
+
+.main-menu > a,
+.menu-item > a{
+  font-size:13px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#2a2a2a;
+  font-weight:500;
+}
+
+.main-menu > a:hover,
+.menu-item > a:hover{
+  color:var(--gold-dark);
+}
+
+.nav-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:46px;
+  padding:0 22px;
+  border-radius:999px;
+  background:linear-gradient(180deg, var(--gold), var(--gold-dark));
+  color:#fff;
+  font-size:14px;
+  font-weight:600;
+  white-space:nowrap;
+  box-shadow:0 10px 24px rgba(167,137,67,.20);
+}
+
+.nav-cta:hover{
+  transform:translateY(-1px);
+}
+
+.menu-item{
+  position:relative;
+}
+
+.has-mega:hover .mega-menu{
+  opacity:1;
+  visibility:visible;
+  transform:translateX(-50%) translateY(0);
+}
+
+.mega-menu{
+  position:absolute;
+  top:calc(100% + 20px);
+  left:50%;
+  transform:translateX(-50%) translateY(10px);
+  width:min(980px, 92vw);
+  display:grid;
+  grid-template-columns:220px 220px 1fr;
+  gap:36px;
+  padding:32px;
+  background:#ffffff;
+  border:1px solid rgba(32,48,64,.08);
+  box-shadow:0 24px 60px rgba(31,53,80,.14);
+  opacity:0;
+  visibility:hidden;
+  transition:all .22s ease;
+  border-radius:20px;
+}
+
+.mega-col{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.mega-title{
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.20em;
+  text-transform:uppercase;
+  color:#7c8a96;
+  margin-bottom:6px;
+}
+
+.mega-col a{
+  color:#32465a;
+  font-size:16px;
+  line-height:1.5;
+}
+
+.mega-col a:hover{
+  color:var(--gold-dark);
+}
+
+.mega-feature{
+  padding-left:18px;
+  border-left:1px solid rgba(32,48,64,.08);
+}
+
+.mega-kicker{
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.20em;
+  text-transform:uppercase;
+  color:var(--gold-dark);
+}
+
+.mega-feature h3{
+  margin-top:10px;
+  font-size:34px;
+  line-height:1;
+  color:var(--blue-deep);
+}
+
+.mega-feature p{
+  margin-top:16px;
+  max-width:30ch;
+  font-size:16px;
+  line-height:1.7;
+}
+
+.menu-toggle{
+  display:none;
+  background:none;
+  border:none;
+  font-size:28px;
+  line-height:1;
+  color:var(--blue-deep);
+  cursor:pointer;
+  padding:0;
+}
+
+.mobile-panel{
+  position:fixed;
+  top:0;
+  right:-320px;
+  width:320px;
+  height:100vh;
+  background:#ffffff;
+  box-shadow:-20px 0 40px rgba(0,0,0,.15);
+  transition:right .35s ease;
+  z-index:999;
+  padding:40px 30px;
+}
+
+.mobile-panel-inner{
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+  margin-top:40px;
+}
+
+.mobile-panel-inner a{
+  font-size:18px;
+  color:#2a2a2a;
+}
+
+.mobile-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:20px;
+  padding:14px 20px;
+  background:linear-gradient(180deg, var(--gold), var(--gold-dark));
+  color:#fff !important;
+  border-radius:30px;
+  text-align:center;
+  font-weight:600;
+}
+
+body.menu-open .mobile-panel{
+  right:0;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero{
+  position:relative;
+  min-height:760px;
+  overflow:hidden;
+  background:#d8e6f2;
+}
+
+.hero-image{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20,36,54,.62) 0%,
+      rgba(20,36,54,.38) 42%,
+      rgba(20,36,54,.12) 72%,
+      rgba(20,36,54,.05) 100%
+    );
+}
+
+.hero-inner{
+  position:relative;
+  z-index:2;
+  width:100%;
+  padding:96px 0 90px;
+}
+
+.hero-copy{
+  max-width:880px;
+}
+
+.eyebrow,
+.section-kicker{
+  display:inline-block;
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+
+.eyebrow{
+  color:rgba(255,255,255,.86);
+}
+
+.section-kicker{
+  color:var(--gold-dark);
+}
+
+.hero h1{
+  margin-top:18px;
+  color:#fff;
+  max-width:14ch;
+  text-shadow:0 8px 30px rgba(0,0,0,.18);
+}
+
+.hero p{
+  margin-top:22px;
+  max-width:42ch;
+  color:rgba(255,255,255,.94);
+}
+
+.hero-actions{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:52px;
+  padding:0 26px;
+  border-radius:999px;
+  font-size:15px;
+  font-weight:600;
+  transition:all .2s ease;
+}
+
+.btn-primary{
+  background:linear-gradient(180deg, var(--gold), var(--gold-dark));
+  color:#fff;
+  box-shadow:0 12px 26px rgba(167,137,67,.18);
+}
+
+.btn-primary:hover{
+  transform:translateY(-1px);
+}
+
+.btn-outline{
+  background:rgba(255,255,255,.12);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.34);
+  backdrop-filter:blur(8px);
+}
+
+.btn-outline:hover{
+  background:rgba(255,255,255,.18);
+}
+
+/* =========================
+   SECTIONS
+   ========================= */
+
+.section{
+  padding:92px 0;
+}
+
+.section-soft{
+  background:linear-gradient(180deg, var(--bg-soft), #f8fbfe);
+  border-top:1px solid rgba(32,48,64,.05);
+  border-bottom:1px solid rgba(32,48,64,.05);
+}
+
+.split-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.copy-block h2{
+  margin-top:14px;
+  max-width:12ch;
+}
+
+.copy-block p{
+  margin-top:20px;
+  max-width:36ch;
+}
+
+.image-block{
+  min-height:520px;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 24px 54px rgba(31,53,80,.10);
+}
+
+.image-block img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.section-head{
+  max-width:780px;
+  margin-bottom:36px;
+}
+
+.section-head h2{
+  margin-top:14px;
+  max-width:13ch;
+}
+
+.section-head-narrow{
+  max-width:940px;
+}
+
+.intro-text{
+  margin-top:20px;
+  max-width:46ch;
+}
+
+/* =========================
+   CARDS
+   ========================= */
+
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+}
+
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+}
+
+.card,
+.process-card{
+  background:linear-gradient(180deg, #ffffff, #fbfdff);
+  border:1px solid rgba(32,48,64,.08);
+  padding:34px;
+  box-shadow:0 20px 50px rgba(31,53,80,.08);
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  border-radius:20px;
+}
+
+.card:hover,
+.process-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 26px 62px rgba(31,53,80,.12);
+  border-color:rgba(199,165,91,.28);
+}
+
+.card h3,
+.process-card h3{
+  color:var(--blue-deep);
+}
+
+.card p,
+.process-card p{
+  margin-top:14px;
+}
+
+.process-card span{
+  display:inline-block;
+  margin-bottom:12px;
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--gold-dark);
+}
+
+/* =========================
+   TRUST / SUPPORT BLOCKS
+   ========================= */
+
+.final-cta{
+  background:linear-gradient(135deg, var(--blue-deep), #2c4d70);
+  border-radius:28px;
+  padding:52px;
+  box-shadow:0 26px 62px rgba(31,53,80,.20);
+}
+
+.final-cta h2{
+  margin-top:14px;
+  color:#fff;
+  max-width:11ch;
+}
+
+.final-cta p{
+  margin-top:20px;
+  max-width:42ch;
+  color:rgba(255,255,255,.88);
+}
+
+.section-kicker-light{
+  color:rgba(255,255,255,.74);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.site-footer{
+  background:#f4efe4;
+  border-top:1px solid rgba(32,48,64,.08);
+  padding:72px 0 44px;
+}
+
+.luxury-footer{
+  color:#3c434b;
+}
+
+.luxury-footer-top{
+  position:relative;
+}
+
+.luxury-footer-brand-block{
+  display:flex;
+  align-items:flex-start;
+  gap:22px;
+  margin-bottom:34px;
+}
+
+.luxury-footer-mark{
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  background:linear-gradient(180deg, var(--gold), var(--gold-dark));
+  box-shadow:0 0 22px rgba(199,165,91,.24);
+  flex:0 0 34px;
+  margin-top:6px;
+}
+
+.luxury-footer-brand{
+  font-family:"Cormorant Garamond", serif;
+  font-size:clamp(34px, 4vw, 58px);
+  line-height:.95;
+  color:var(--blue-deep);
+  letter-spacing:-0.02em;
+}
+
+.luxury-footer-subbrand{
+  margin-top:8px;
+  font-size:16px;
+  line-height:1.6;
+  color:#6d7680;
+}
+
+.luxury-footer-divider{
+  height:1px;
+  background:rgba(32,48,64,.10);
+  margin:0 0 34px;
+}
+
+.luxury-footer-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr .9fr 1fr;
+  gap:42px;
+}
+
+.luxury-footer-col{
+  min-width:0;
+}
+
+.luxury-footer-heading{
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:#8b97a2;
+  margin-bottom:22px;
+}
+
+.luxury-footer-links{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.luxury-footer-links a{
+  color:#3c434b;
+  font-size:18px;
+  line-height:1.5;
+  transition:opacity .2s ease;
+}
+
+.luxury-footer-links a:hover{
+  opacity:.70;
+}
+
+.luxury-footer-copy p{
+  margin:0 0 14px;
+  font-size:18px;
+  line-height:1.6;
+  color:#5e6a75;
+}
+
+.luxury-footer-copy strong{
+  color:var(--blue-deep);
+  font-weight:600;
+}
+
+.luxury-footer-highlight{
+  margin-top:24px;
+  font-size:14px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--gold-dark);
+}
+
+.luxury-footer-bottom{
+  border-top:1px solid rgba(32,48,64,.10);
+  margin-top:42px;
+  padding-top:24px;
+  font-size:16px;
+  line-height:1.6;
+  color:#75808a;
+  max-width:900px;
+}
+
+/* =========================
+   CONTACT PAGE / FORMS
+   ========================= */
+
+.contact-layout{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:40px;
+  align-items:start;
+}
+
+.contact-card,
+.contact-form{
+  background:#fff;
+  border:1px solid rgba(32,48,64,.08);
+  box-shadow:0 20px 50px rgba(31,53,80,.08);
+  border-radius:18px;
+  padding:32px;
+}
+
+.contact-card h3,
+.contact-form h3{
+  color:var(--blue-deep);
+  margin-bottom:18px;
+}
+
+.contact-card p{
+  margin:0 0 14px;
+}
+
+.contact-form-intro{
+  margin-bottom:24px;
+  max-width:60ch;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.form-field{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.form-field-full{
+  grid-column:1 / -1;
+}
+
+.form-field label{
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#7d8894;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea{
+  width:100%;
+  border:1px solid rgba(32,48,64,.12);
+  background:#fff;
+  padding:14px 16px;
+  font:inherit;
+  color:var(--text);
+  border-radius:10px;
+  outline:none;
+  appearance:none;
+  -webkit-appearance:none;
+}
+
+.form-field textarea{
+  resize:vertical;
+  min-height:180px;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder{
+  color:#95a1ab;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus{
+  border-color:var(--gold);
+  box-shadow:0 0 0 3px rgba(199,165,91,.14);
+}
+
+.contact-submit{
+  margin-top:28px;
+}
+
+.contact-note{
+  margin-top:18px;
+  font-size:14px;
+  line-height:1.7;
+  color:#7a8792;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width:1100px){
+  .split-grid,
+  .card-grid,
+  .process-grid{
+    grid-template-columns:1fr;
   }
-  </script>
-</head>
-
-<body>
-
-<header class="lux-header">
-
-  <div class="service-bar">
-    <div class="container service-inner">
-      <div class="service-left">Speak to Operations | +44 20 8629 2776</div>
-      <div class="service-right">Tour Operators • DMCs • UK &amp; Ireland Touring</div>
-    </div>
-  </div>
-
-  <div class="lux-nav">
-    <div class="container nav-inner">
-
-      <a href="index.html" class="logo">UK Inbound Ground Transport</a>
-
-      <nav class="main-menu">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="touring-destinations.html">Destinations</a>
-        <a href="coach-hire-uk.html">Coach Hire</a>
-
-        <div class="menu-item has-mega">
-          <a href="#">Markets</a>
-
-          <div class="mega-menu">
-            <div class="mega-col">
-              <div class="mega-title">International Markets</div>
-              <a href="usa.html">USA</a>
-              <a href="europe.html">Europe</a>
-              <a href="india.html">India</a>
-              <a href="china.html">China</a>
-            </div>
-
-            <div class="mega-col">
-              <div class="mega-title">Travel Trade Support</div>
-              <a href="services.html">Tour Operator Support</a>
-              <a href="contact.html">Trade Enquiries</a>
-              <a href="contact.html">Operational Planning</a>
-              <a href="contact.html">Programme Delivery</a>
-            </div>
-
-            <div class="mega-feature">
-              <div class="mega-kicker">UK &amp; Ireland Touring</div>
-              <h3>Inbound transport for structured travel programmes</h3>
-              <p>
-                Supporting tour operators and destination management companies with
-                dependable transport coordination across the United Kingdom and Ireland.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <a href="contact.html">Contact</a>
-      </nav>
-
-      <a href="contact.html" class="nav-cta">Contact Operations</a>
-
-      <button class="menu-toggle" aria-label="Open menu" onclick="document.body.classList.toggle('menu-open')">
-        ☰
-      </button>
-
-    </div>
-  </div>
-
-  <div class="mobile-panel">
-    <div class="mobile-panel-inner">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="touring-destinations.html">Destinations</a>
-      <a href="coach-hire-uk.html">Coach Hire</a>
-      <a href="usa.html">USA</a>
-      <a href="europe.html">Europe</a>
-      <a href="india.html">India</a>
-      <a href="china.html">China</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="mobile-cta">Contact Operations</a>
-    </div>
-  </div>
-
-</header>
-
-<main>
-
-  <!-- HERO -->
-  <section class="hero">
-    <img src="hero-uk-touring.jpeg" class="hero-image" alt="UK and Ireland touring landscape for organised group travel services">
-    <div class="hero-overlay"></div>
-
-    <div class="container hero-inner">
-      <div class="hero-copy">
-
-        <div class="eyebrow">
-          Travel Trade Services • Airports • Cruise Ports • UK &amp; Ireland Touring
-        </div>
-
-        <h1>
-          Inbound ground transport services for UK &amp; Ireland touring programmes
-        </h1>
-
-        <p>
-          UK Inbound Ground Transport supports tour operators and destination
-          management companies delivering organised travel programmes across the
-          United Kingdom and Ireland, including airport transfers, cruise port
-          transport, shore excursions and multi-day touring itineraries.
-        </p>
-
-        <div class="hero-actions">
-          <a href="contact.html" class="btn btn-primary">Contact Operations</a>
-          <a href="coach-hire-uk.html" class="btn btn-outline">Explore Coach Hire</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- INTRO -->
-  <section class="section">
-    <div class="container split-grid">
-
-      <div class="copy-block">
-        <div class="section-kicker">Services overview</div>
-
-        <h2>
-          Transport support designed around programme delivery
-        </h2>
-
-        <p>
-          Our services are structured for travel trade partners delivering inbound
-          itineraries across the United Kingdom and Ireland. Support is centred on
-          routing practicality, operational timing and dependable programme flow.
-        </p>
-
-        <p>
-          We work with tour operators, destination management companies and
-          organised group travel planners requiring transport coordination across
-          gateway cities, regional touring routes, cruise arrivals and multi-destination
-          itineraries.
-        </p>
-      </div>
-
-      <div class="image-block">
-        <img src="hero-uk-touring.jpeg" alt="Scenic touring image for UK and Ireland travel trade programmes">
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CORE SERVICES -->
-  <section class="section section-soft">
-    <div class="container">
-
-      <div class="section-head">
-        <div class="section-kicker">Core services</div>
-        <h2>Transport support for organised travel itineraries</h2>
-      </div>
-
-      <div class="card-grid">
-
-        <article class="card">
-          <h3>Multi-day touring transport</h3>
-          <p>
-            Transport coordination for structured itineraries operating across
-            England, Scotland, Wales and Ireland, supporting hotel-to-hotel
-            programme movements and regional touring routes.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Gateway arrival movements</h3>
-          <p>
-            Operational support for airport arrivals and departures serving
-            international touring programmes and organised group itineraries.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Regional itinerary support</h3>
-          <p>
-            Ground transport coordination linking gateway cities, heritage
-            destinations and regional touring routes across the UK and Ireland.
-          </p>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- AIRPORT SECTION -->
-  <section class="section">
-    <div class="container">
-
-      <div class="section-head">
-        <div class="section-kicker">Airport transport</div>
-        <h2>Airport transfers and gateway transport across the UK and Ireland</h2>
-        <p class="intro-text">
-          Our airport transfer services support inbound touring programmes,
-          group arrivals, departures and onward itinerary movements across major
-          gateway airports in the United Kingdom and Ireland.
-        </p>
-      </div>
-
-      <div class="card-grid">
-
-        <article class="card">
-          <h3>London &amp; South East gateways</h3>
-          <p>
-            Heathrow, Gatwick, Stansted, Luton, London City, Southampton and
-            Dover-linked arrival movements for touring programmes beginning or
-            ending in southern England.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>England, Scotland &amp; Wales gateways</h3>
-          <p>
-            Manchester, Birmingham, Bristol, Liverpool, Leeds Bradford,
-            Newcastle, East Midlands, Cardiff, Edinburgh, Glasgow, Aberdeen and
-            Inverness for regional touring programmes and organised group travel.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Ireland &amp; Northern Ireland gateways</h3>
-          <p>
-            Dublin, Cork, Shannon, Ireland West Airport Knock, Kerry, Donegal,
-            Belfast International, George Best Belfast City and City of Derry
-            for touring programmes across Ireland and Northern Ireland.
-          </p>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CRUISE SECTION -->
-  <section class="section section-soft">
-    <div class="container">
-
-      <div class="section-head">
-        <div class="section-kicker">Cruise operations</div>
-        <h2>Cruise port transport and shore excursion support</h2>
-        <p class="intro-text">
-          We support cruise operators, shore excursion companies and destination
-          management companies delivering organised shore programmes, cruise
-          transfers and touring itineraries from principal cruise ports across
-          the United Kingdom and Ireland.
-        </p>
-      </div>
-
-      <div class="process-grid">
-
-        <div class="process-card">
-          <span>01</span>
-          <h3>Southern England cruise ports</h3>
-          <p>
-            Southampton, Dover and Portland transport support for cruise arrivals,
-            shore excursions and onward touring programmes.
-          </p>
-        </div>
-
-        <div class="process-card">
-          <span>02</span>
-          <h3>Scotland, Wales &amp; regional Britain</h3>
-          <p>
-            Greenock, Edinburgh (South Queensferry), Invergordon, Kirkwall,
-            Stornoway, Newcastle, Liverpool and Welsh cruise calls for regional
-            touring and shore-based programmes.
-          </p>
-        </div>
-
-        <div class="process-card">
-          <span>03</span>
-          <h3>Ireland cruise ports</h3>
-          <p>
-            Belfast, Cork, Dublin, Dún Laoghaire, Londonderry and Waterford
-            transport support for shore excursions, cruise transfers and
-            organised group itineraries.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- TRAVEL TRADE SUPPORT -->
-  <section class="section">
-    <div class="container">
-
-      <div class="section-head section-head-narrow">
-        <div class="section-kicker">Travel trade support</div>
-        <h2>Services aligned to tour operators and destination management companies</h2>
-        <p class="intro-text">
-          Our operating model is designed for travel trade partners requiring
-          structured transport delivery across organised group travel programmes.
-        </p>
-      </div>
-
-      <div class="process-grid">
-
-        <div class="process-card">
-          <span>01</span>
-          <h3>Programme coordination</h3>
-          <p>
-            Support aligned to itinerary structure, gateway timings and touring
-            sequence, ensuring transport delivery fits the operational realities
-            of organised travel programmes.
-          </p>
-        </div>
-
-        <div class="process-card">
-          <span>02</span>
-          <h3>Operational planning</h3>
-          <p>
-            Transport planning shaped around route practicality, travel time,
-            schedule continuity and the movement requirements of inbound groups.
-          </p>
-        </div>
-
-        <div class="process-card">
-          <span>03</span>
-          <h3>Programme delivery</h3>
-          <p>
-            Dependable operational support across active itineraries, with a
-            focus on continuity, timing discipline and calm delivery throughout
-            the touring programme.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- COACH HIRE SUPPORT -->
-  <section class="section section-soft">
-    <div class="container split-grid">
-
-      <div class="copy-block">
-        <div class="section-kicker">Travel trade transport</div>
-
-        <h2>
-          UK coach hire support for touring programmes, airports and cruise movements
-        </h2>
-
-        <p>
-          Where programme structure requires it, our services include organised
-          <a href="coach-hire-uk.html">UK coach hire support</a> for touring movements,
-          airport transfers, cruise port transport and shore excursion delivery.
-        </p>
-
-        <p>
-          This support is positioned specifically for travel trade partners,
-          rather than retail private hire, and is aligned to the operational
-          needs of <a href="contact.html">tour operators and destination management companies</a>.
-        </p>
-      </div>
-
-      <div class="image-block">
-        <img src="hero-uk-touring.jpeg" alt="Travel trade touring programmes across the UK and Ireland">
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FINAL CTA -->
-  <section class="section">
-    <div class="container">
-
-      <div class="final-cta">
-        <div class="section-kicker section-kicker-light">Travel Trade Enquiries</div>
-
-        <h2>
-          Discuss your service requirements
-        </h2>
-
-        <p>
-          If you are planning a touring programme across the United Kingdom
-          or Ireland, our team would be pleased to discuss how our transport
-          services can support your itinerary.
-        </p>
-
-        <div class="hero-actions">
-          <a href="contact.html" class="btn btn-primary">Contact Operations</a>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer luxury-footer">
-
-  <div class="container luxury-footer-top">
-
-    <div class="luxury-footer-brand-block">
-      <div class="luxury-footer-mark"></div>
-
-      <div>
-        <div class="luxury-footer-brand">Evershine Transport Limited</div>
-        <div class="luxury-footer-subbrand">
-          Tour Operators • DMCs • UK &amp; Ireland Touring
-        </div>
-      </div>
-    </div>
-
-    <div class="luxury-footer-divider"></div>
-
-    <div class="luxury-footer-grid">
-
-      <div class="luxury-footer-col">
-        <div class="luxury-footer-heading">Contact</div>
-
-        <div class="luxury-footer-links">
-          <a href="mailto:info@ukinboundgroundtransport.com">info@ukinboundgroundtransport.com</a>
-          <a href="tel:+442086292776">+44 20 8629 2776</a>
-        </div>
-
-        <div class="luxury-footer-highlight">
-          UK • Ireland • London Movements
-        </div>
-      </div>
-
-      <div class="luxury-footer-col">
-        <div class="luxury-footer-heading">Company</div>
-
-        <div class="luxury-footer-copy">
-          <p>Company Reg: <strong>13507458</strong></p>
-          <p>VAT: <strong>388919914</strong></p>
-          <p>© 2026 Evershine Transport Limited</p>
-        </div>
-      </div>
-
-      <div class="luxury-footer-col">
-        <div class="luxury-footer-heading">Navigation</div>
-
-        <div class="luxury-footer-links">
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="coach-hire-uk.html">Coach Hire</a>
-          <a href="touring-destinations.html">Destinations</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </div>
-
-      <div class="luxury-footer-col">
-        <div class="luxury-footer-heading">Policies</div>
-
-        <div class="luxury-footer-links">
-          <a href="contact.html">GDPR &amp; Data Protection</a>
-          <a href="contact.html">Modern Slavery Statement</a>
-          <a href="contact.html">Cookie Policy</a>
-          <a href="contact.html">Privacy Policy</a>
-          <a href="contact.html">Terms &amp; Conditions</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="luxury-footer-bottom">
-      Travel trade transport partner supporting inbound tourism programmes
-      across the United Kingdom and Ireland.
-    </div>
-
-  </div>
-
-</footer>
-
-</body>
-</html>
+
+  .copy-block p,
+  .intro-text,
+  .final-cta p{
+    max-width:none;
+  }
+}
+
+@media (max-width:980px){
+  .service-inner{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .nav-inner{
+    grid-template-columns:1fr auto;
+    gap:16px;
+    min-height:76px;
+    padding:12px 0;
+  }
+
+  .main-menu,
+  .nav-cta{
+    display:none;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .luxury-footer-grid{
+    grid-template-columns:1fr;
+    gap:32px;
+  }
+
+  .luxury-footer-col{
+    width:100%;
+  }
+
+  .luxury-footer-links{
+    gap:12px;
+  }
+
+  .luxury-footer-links a{
+    font-size:16px;
+    word-break:break-word;
+  }
+
+  .luxury-footer-copy p{
+    font-size:16px;
+  }
+
+  .luxury-footer-heading{
+    margin-top:10px;
+  }
+
+  .logo{
+    font-size:20px;
+    max-width:240px;
+    line-height:1;
+    letter-spacing:.01em;
+    white-space:normal;
+  }
+
+  .contact-layout{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width:700px){
+  .container{
+    width:min(100% - 32px, 1200px);
+  }
+
+  .service-bar{
+    font-size:12px;
+  }
+
+  .service-inner{
+    gap:8px;
+    padding:8px 0 10px;
+  }
+
+  .menu-toggle{
+    font-size:22px;
+    padding:6px 8px;
+  }
+
+  .hero{
+    min-height:500px;
+  }
+
+  .hero-inner{
+    padding:64px 0 44px;
+  }
+
+  .hero h1{
+    max-width:none;
+    font-size:clamp(34px, 9vw, 46px);
+    line-height:1.05;
+  }
+
+  .hero p{
+    max-width:none;
+    font-size:16px;
+    line-height:1.65;
+  }
+
+  .hero-actions{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .btn{
+    width:100%;
+  }
+
+  .section{
+    padding:62px 0;
+  }
+
+  .image-block{
+    min-height:300px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 24px 60px rgba(31,53,80,.10);
+  }
+
+  .image-block img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+  h2{
+    font-size:clamp(30px, 8vw, 40px);
+    line-height:1.05;
+  }
+
+  p{
+    font-size:16px;
+    line-height:1.7;
+  }
+
+  .card,
+  .process-card,
+  .final-cta,
+  .contact-card,
+  .contact-form{
+    padding:24px;
+  }
+
+  .mobile-panel{
+    width:100%;
+    right:-100%;
+    padding:32px 24px;
+  }
+
+  .mobile-panel-inner{
+    margin-top:24px;
+  }
+
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+}
