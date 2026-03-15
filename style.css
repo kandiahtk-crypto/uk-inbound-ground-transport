@@ -381,3 +381,26 @@ p{
 }
 
 }
+
+/* PREMIUM MOBILE HEADER */
+
+@media (max-width:980px){
+
+.lux-nav{
+  padding:6px 0;
+}
+
+.logo{
+  font-size:19px;
+  letter-spacing:.02em;
+}
+
+.menu-toggle{
+  width:44px;
+  height:44px;
+  border-radius:14px;
+  background:#f1f1f1;
+  font-size:20px;
+}
+
+}
