@@ -1916,26 +1916,4 @@ p{
   }
 }
 
-/* LUXURY BACKGROUND TEXTURE */
 
-body::before{
-
-content:"";
-
-position:fixed;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-pointer-events:none;
-
-background:
-radial-gradient(circle at 20% 10%, rgba(199,165,91,.06), transparent 35%),
-radial-gradient(circle at 80% 90%, rgba(31,53,80,.05), transparent 40%);
-
-z-index:-1;
-
-}
