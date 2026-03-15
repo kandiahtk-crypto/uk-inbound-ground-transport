@@ -517,3 +517,48 @@ p{
     font-size:22px;
   }
 }
+
+/* Mega Menu Layout */
+.mega-menu{
+display:grid;
+grid-template-columns:1fr 1fr 1.3fr;
+gap:40px;
+padding:40px;
+background:#fff;
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+border-radius:12px;
+width:720px;
+}
+
+.mega-col{
+display:flex;
+flex-direction:column;
+}
+
+.mega-col a{
+padding:6px 0;
+text-decoration:none;
+color:#2c3642;
+font-size:15px;
+}
+
+.mega-title{
+font-size:12px;
+letter-spacing:.12em;
+text-transform:uppercase;
+color:#c8a96a;
+margin-bottom:12px;
+font-weight:600;
+}
+
+.mega-feature h3{
+font-family:"Cormorant Garamond",serif;
+font-size:22px;
+margin-bottom:10px;
+}
+
+.mega-feature p{
+font-size:14px;
+line-height:1.6;
+color:#4a5562;
+}
