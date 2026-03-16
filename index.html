@@ -237,7 +237,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section reveal">
     <div class="container split-grid">
 
       <div class="copy-block">
@@ -256,14 +256,14 @@
         </p>
       </div>
 
-      <div class="image-block">
+      <div class="image-block reveal">
         <img src="hero-uk-touring.jpeg" alt="Scenic touring landscape across the UK and Ireland">
       </div>
 
     </div>
   </section>
 
-  <section class="section section-soft">
+  <section class="section section-soft reveal">
     <div class="container">
 
       <div class="section-head">
@@ -276,21 +276,21 @@
 
       <div class="card-grid">
 
-        <article class="card">
+        <article class="card reveal">
           <h3>Multi-day touring transport</h3>
           <p>
             Operational transport support for hotel-to-hotel touring itineraries across England, Scotland, Wales and Ireland, supporting organised group travel programmes.
           </p>
         </article>
 
-        <article class="card">
+        <article class="card reveal">
           <h3>Gateway arrival movements</h3>
           <p>
             Airport arrival and departure transport supporting international touring programmes beginning or concluding at major UK and Ireland gateway airports.
           </p>
         </article>
 
-        <article class="card">
+        <article class="card reveal">
           <h3>Regional touring routes</h3>
           <p>
             Ground transport coordination supporting touring routes connecting major cities, heritage destinations and regional travel programmes.
@@ -301,7 +301,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section reveal">
     <div class="container">
 
       <div class="section-head section-head-narrow">
@@ -314,7 +314,7 @@
 
       <div class="process-grid">
 
-        <div class="process-card">
+        <div class="process-card reveal">
           <span>01</span>
           <h3>London &amp; South East gateways</h3>
           <p>
@@ -322,7 +322,7 @@
           </p>
         </div>
 
-        <div class="process-card">
+        <div class="process-card reveal">
           <span>02</span>
           <h3>England, Scotland &amp; Wales gateways</h3>
           <p>
@@ -330,7 +330,7 @@
           </p>
         </div>
 
-        <div class="process-card">
+        <div class="process-card reveal">
           <span>03</span>
           <h3>Ireland &amp; Northern Ireland gateways</h3>
           <p>
@@ -342,7 +342,7 @@
     </div>
   </section>
 
-  <section class="section section-soft">
+  <section class="section section-soft reveal">
     <div class="container">
 
       <div class="section-head section-head-narrow">
@@ -355,7 +355,7 @@
 
       <div class="process-grid">
 
-        <div class="process-card">
+        <div class="process-card reveal">
           <span>01</span>
           <h3>Southern England cruise ports</h3>
           <p>
@@ -363,7 +363,7 @@
           </p>
         </div>
 
-        <div class="process-card">
+        <div class="process-card reveal">
           <span>02</span>
           <h3>Scotland, Wales &amp; regional Britain</h3>
           <p>
@@ -371,7 +371,7 @@
           </p>
         </div>
 
-        <div class="process-card">
+        <div class="process-card reveal">
           <span>03</span>
           <h3>Ireland cruise ports</h3>
           <p>
@@ -383,7 +383,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section reveal">
     <div class="container">
 
       <div class="section-head section-head-narrow">
@@ -396,7 +396,7 @@
 
       <div class="process-grid">
 
-        <div class="process-card">
+        <div class="process-card reveal">
           <span>01</span>
           <h3>Tour operators</h3>
           <p>
@@ -404,7 +404,7 @@
           </p>
         </div>
 
-        <div class="process-card">
+        <div class="process-card reveal">
           <span>02</span>
           <h3>Destination management companies</h3>
           <p>
@@ -412,7 +412,7 @@
           </p>
         </div>
 
-        <div class="process-card">
+        <div class="process-card reveal">
           <span>03</span>
           <h3>Organised group travel</h3>
           <p>
@@ -424,7 +424,7 @@
     </div>
   </section>
 
-  <section class="section section-soft">
+  <section class="section section-soft reveal">
     <div class="container">
 
       <div class="section-head section-head-narrow">
@@ -437,7 +437,7 @@
 
       <div class="process-grid">
 
-        <div class="process-card">
+        <div class="process-card reveal">
           <span>01</span>
           <h3>Programme review</h3>
           <p>
@@ -445,7 +445,7 @@
           </p>
         </div>
 
-        <div class="process-card">
+        <div class="process-card reveal">
           <span>02</span>
           <h3>Transport planning</h3>
           <p>
@@ -453,7 +453,7 @@
           </p>
         </div>
 
-        <div class="process-card">
+        <div class="process-card reveal">
           <span>03</span>
           <h3>Operational delivery</h3>
           <p>
@@ -465,7 +465,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section reveal">
     <div class="container split-grid">
 
       <div class="copy-block">
@@ -484,17 +484,17 @@
         </p>
       </div>
 
-      <div class="image-block">
+      <div class="image-block reveal">
         <img src="hero-uk-touring.jpeg" alt="Travel trade touring programmes across the UK and Ireland">
       </div>
 
     </div>
   </section>
 
-  <section class="section">
+  <section class="section reveal">
     <div class="container">
 
-      <div class="final-cta">
+      <div class="final-cta reveal">
         <div class="section-kicker section-kicker-light">Travel Trade Enquiries</div>
 
         <h2>Discuss your touring programme</h2>
@@ -599,6 +599,22 @@ document.addEventListener("DOMContentLoaded", function () {
       menuToggle.setAttribute("aria-expanded", String(!expanded));
     });
   }
+
+  const reveals = document.querySelectorAll(".reveal");
+
+  function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+
+    reveals.forEach(function (el) {
+      const top = el.getBoundingClientRect().top;
+      if (top < windowHeight - 100) {
+        el.classList.add("active");
+      }
+    });
+  }
+
+  revealOnScroll();
+  window.addEventListener("scroll", revealOnScroll);
 });
 </script>
 
